@@ -38,6 +38,7 @@ class Email:
         s.close()
 
     def send(self, e_users, e_title, e_content):
+
         msg = MIMEText(e_content, _subtype='html', _charset='utf-8')
         msg["Subject"] = '%s %s' % (e_title, str(self.now))
         msg["From"] = formataddr([u"QA", self._user])

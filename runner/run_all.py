@@ -23,7 +23,7 @@ def run_all_case():
     cases = add_py_case(py_file_path, rule)
     custom_report(cases)
     # 注意：建议调试代码时，屏蔽发邮件功能
-    #Email().send_attach(receive_users, title, html_report_path, html_report_name)
+    Email().send_attach(receive_users, title, html_report_path, html_report_name)
 
 
 if __name__ == "__main__":
@@ -33,5 +33,5 @@ if __name__ == "__main__":
     :param param3: module(0:全部,1:首页,2:学习,3:发现,4:我的)
     :param param4: case_version(0:全部,1:旧版本,2:新版本) 
     '''
-   # ReadConfig().write_config(sys.argv[1], sys.argv[2], sys.argv[3], sys.argv[4])
+    #ReadConfig().write_config(sys.argv[1], sys.argv[2], sys.argv[3], sys.argv[4])
     run_all_case()

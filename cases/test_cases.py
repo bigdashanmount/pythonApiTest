@@ -9,7 +9,6 @@ from configs.config_reader import ReadConfig
 from common.http_client import Client
 from util.case_filter import get_test_cases
 
-
 # 筛选有效用例
 test_data = get_test_cases()
 login_data = test_data[0]

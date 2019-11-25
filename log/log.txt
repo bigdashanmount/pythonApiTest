@@ -1,0 +1,163 @@
+[2019-08-08 17:48:59] [DEBUG] debug日志
+[2019-08-08 17:48:59] [INFO] info日志
+[2019-08-08 17:48:59] [WARNING] warning日志
+[2019-08-08 17:48:59] [ERROR] error日志
+[2019-08-08 17:48:59] [CRITICAL] critical日志
+[2019-08-09 20:31:24] [DEBUG] debug日志
+[2019-08-09 20:31:24] [INFO] info日志
+[2019-08-09 20:31:24] [WARNING] warning日志
+[2019-08-09 20:31:24] [ERROR] error日志
+[2019-08-09 20:31:24] [CRITICAL] critical日志
+[2019-11-25 16:00:15] [DEBUG] debug日志
+[2019-11-25 16:00:15] [INFO] info日志
+[2019-11-25 16:00:15] [WARNING] warning日志
+[2019-11-25 16:00:15] [ERROR] error日志
+[2019-11-25 16:00:15] [CRITICAL] critical日志
+[2019-11-25 16:17:50] [DEBUG] debug日志孟祥山
+[2019-11-25 16:17:50] [INFO] info日志
+[2019-11-25 16:17:50] [WARNING] warning日志
+[2019-11-25 16:17:50] [ERROR] error日志
+[2019-11-25 16:17:50] [CRITICAL] critical日志
+[2019-11-25 16:37:30] [DEBUG] debug3333333333日志孟祥山
+[2019-11-25 16:41:08] [DEBUG] {'row_id': 3, 'case_id': '2', 'case_version': '2', 'module': 'wd', 'case_name': 'listCampusRegion', 'method': 'GET', 'url': '/basic/campusRegion/listCampusRegion', 'params': 'id=0&selectId=0', 'headers': '{"appKey":"201820011141153","isAdmin":"2","signature":"signature_value","token":"token_value","userId":"userId_value"}', 'body': '', 'type': '', 'depend': '', 'active': '1', 'exp_res': "c.assert_status_code(200)&c.assert_equal('$..code', 0)"}
+[2019-11-25 16:41:34] [INFO] {'row_id': 3, 'case_id': '2', 'case_version': '2', 'module': 'wd', 'case_name': 'listCampusRegion', 'method': 'GET', 'url': '/basic/campusRegion/listCampusRegion', 'params': 'id=0&selectId=0', 'headers': '{"appKey":"201820011141153","isAdmin":"2","signature":"signature_value","token":"token_value","userId":"userId_value"}', 'body': '', 'type': '', 'depend': '', 'active': '1', 'exp_res': "c.assert_status_code(200)&c.assert_equal('$..code', 0)"}
+[2019-11-25 16:44:05] [INFO] 请求参数如下：
+[2019-11-25 16:44:05] [INFO] {'row_id': 3, 'case_id': '2', 'case_version': '2', 'module': 'wd', 'case_name': 'listCampusRegion', 'method': 'GET', 'url': '/basic/campusRegion/listCampusRegion', 'params': 'id=0&selectId=0', 'headers': '{"appKey":"201820011141153","isAdmin":"2","signature":"signature_value","token":"token_value","userId":"userId_value"}', 'body': '', 'type': '', 'depend': '', 'active': '1', 'exp_res': "c.assert_status_code(200)&c.assert_equal('$..code', 0)"}
+[2019-11-25 16:46:00] [INFO] 请求参数如下：
+[2019-11-25 16:46:00] [INFO] {'row_id': 3, 'case_id': '2', 'case_version': '2', 'module': 'wd', 'case_name': 'listCampusRegion', 'method': 'GET', 'url': '/basic/campusRegion/listCampusRegion', 'params': 'id=0&selectId=0', 'headers': '{"appKey":"201820011141153","isAdmin":"2","signature":"signature_value","token":"token_value","userId":"userId_value"}', 'body': '', 'type': '', 'depend': '', 'active': '1', 'exp_res': "c.assert_status_code(200)&c.assert_equal('$..code', 0)"}
+[2019-11-25 16:47:40] [DEBUG] debug日志孟祥山
+[2019-11-25 16:47:40] [INFO] info日志
+[2019-11-25 16:47:40] [WARNING] warning日志
+[2019-11-25 16:47:40] [ERROR] error日志
+[2019-11-25 16:47:40] [CRITICAL] critical日志
+[2019-11-25 16:48:20] [INFO] CMS_请求参数如下：
+[2019-11-25 16:48:20] [INFO] {'row_id': 3, 'case_id': '2', 'case_version': '2', 'module': 'wd', 'case_name': 'listCampusRegion', 'method': 'GET', 'url': '/basic/campusRegion/listCampusRegion', 'params': 'id=0&selectId=0', 'headers': '{"appKey":"201820011141153","isAdmin":"2","signature":"signature_value","token":"token_value","userId":"userId_value"}', 'body': '', 'type': '', 'depend': '', 'active': '1', 'exp_res': "c.assert_status_code(200)&c.assert_equal('$..code', 0)"}
+[2019-11-25 16:49:45] [INFO] CMS_请求参数如下：
+[2019-11-25 16:49:45] [INFO] {'row_id': 3, 'case_id': '2', 'case_version': '2', 'module': 'wd', 'case_name': 'listCampusRegion', 'method': 'GET', 'url': '/basic/campusRegion/listCampusRegion', 'params': 'id=0&selectId=0', 'headers': '{"appKey":"201820011141153","isAdmin":"2","signature":"signature_value","token":"token_value","userId":"userId_value"}', 'body': '', 'type': '', 'depend': '', 'active': '1', 'exp_res': "c.assert_status_code(200)&c.assert_equal('$..code', 0)"}
+[2019-11-25 16:49:45] [INFO] 接口相应信息：
+[2019-11-25 16:49:45] [INFO] {
+  "code" : 0,
+  "message" : "SUCCESS",
+  "value" : [ {
+    "bigAreaId" : 101,
+    "bigAreaName" : "华东",
+    "longitude" : 0.0,
+    "latitude" : 0.0
+  }, {
+    "bigAreaId" : 102,
+    "bigAreaName" : "西南",
+    "longitude" : 0.0,
+    "latitude" : 0.0
+  }, {
+    "bigAreaId" : 103,
+    "bigAreaName" : "东北",
+    "longitude" : 0.0,
+    "latitude" : 0.0
+  }, {
+    "bigAreaId" : 104,
+    "bigAreaName" : "华北",
+    "longitude" : 0.0,
+    "latitude" : 0.0
+  }, {
+    "bigAreaId" : 105,
+    "bigAreaName" : "华中",
+    "longitude" : 0.0,
+    "latitude" : 0.0
+  }, {
+    "bigAreaId" : 106,
+    "bigAreaName" : "华南",
+    "longitude" : 0.0,
+    "latitude" : 0.0
+  }, {
+    "bigAreaId" : 107,
+    "bigAreaName" : "西北",
+    "longitude" : 0.0,
+    "latitude" : 0.0
+  } ]
+}
+[2019-11-25 16:50:18] [INFO] CMS_请求参数如下：
+[2019-11-25 16:50:18] [INFO] {'row_id': 3, 'case_id': '2', 'case_version': '2', 'module': 'wd', 'case_name': 'listCampusRegion', 'method': 'GET', 'url': '/basic/campusRegion/listCampusRegion', 'params': 'id=0&selectId=0', 'headers': '{"appKey":"201820011141153","isAdmin":"2","signature":"signature_value","token":"token_value","userId":"userId_value"}', 'body': '', 'type': '', 'depend': '', 'active': '1', 'exp_res': "c.assert_status_code(200)&c.assert_equal('$..code', 0)"}
+[2019-11-25 16:50:18] [INFO] CMS_接口响应信息如下：
+[2019-11-25 16:50:18] [INFO] {
+  "code" : 0,
+  "message" : "SUCCESS",
+  "value" : [ {
+    "bigAreaId" : 101,
+    "bigAreaName" : "华东",
+    "longitude" : 0.0,
+    "latitude" : 0.0
+  }, {
+    "bigAreaId" : 102,
+    "bigAreaName" : "西南",
+    "longitude" : 0.0,
+    "latitude" : 0.0
+  }, {
+    "bigAreaId" : 103,
+    "bigAreaName" : "东北",
+    "longitude" : 0.0,
+    "latitude" : 0.0
+  }, {
+    "bigAreaId" : 104,
+    "bigAreaName" : "华北",
+    "longitude" : 0.0,
+    "latitude" : 0.0
+  }, {
+    "bigAreaId" : 105,
+    "bigAreaName" : "华中",
+    "longitude" : 0.0,
+    "latitude" : 0.0
+  }, {
+    "bigAreaId" : 106,
+    "bigAreaName" : "华南",
+    "longitude" : 0.0,
+    "latitude" : 0.0
+  }, {
+    "bigAreaId" : 107,
+    "bigAreaName" : "西北",
+    "longitude" : 0.0,
+    "latitude" : 0.0
+  } ]
+}
+[2019-11-25 16:53:28] [INFO] CMS_请求参数如下：
+[2019-11-25 16:53:28] [INFO] {'row_id': 3, 'case_id': '2', 'case_version': '2', 'module': 'wd', 'case_name': 'listCampusRegion', 'method': 'GET', 'url': '/basic/campusRegion/listCampusRegion', 'params': 'id=0&selectId=0', 'headers': '{"appKey":"201820011141153","isAdmin":"2","signature":"signature_value","token":"token_value","userId":"userId_value"}', 'body': '', 'type': '', 'depend': '', 'active': '1', 'exp_res': "c.assert_status_code(200)&c.assert_equal('$..code', 0)"}
+[2019-11-25 16:53:28] [INFO] CMS_接口响应信息如下：
+[2019-11-25 16:53:28] [INFO] {
+  "code" : 0,
+  "message" : "SUCCESS",
+  "value" : [ {
+    "bigAreaId" : 101,
+    "bigAreaName" : "华东",
+    "longitude" : 0.0,
+    "latitude" : 0.0
+  }, {
+    "bigAreaId" : 102,
+    "bigAreaName" : "西南",
+    "longitude" : 0.0,
+    "latitude" : 0.0
+  }, {
+    "bigAreaId" : 103,
+    "bigAreaName" : "东北",
+    "longitude" : 0.0,
+    "latitude" : 0.0
+  }, {
+    "bigAreaId" : 104,
+    "bigAreaName" : "华北",
+    "longitude" : 0.0,
+    "latitude" : 0.0
+  }, {
+    "bigAreaId" : 105,
+    "bigAreaName" : "华中",
+    "longitude" : 0.0,
+    "latitude" : 0.0
+  }, {
+    "bigAreaId" : 106,
+    "bigAreaName" : "华南",
+    "longitude" : 0.0,
+    "latitude" : 0.0
+  }, {
+    "bigAreaId" : 107,
+    "bigAreaName" : "西北",
+    "longitude" : 0.0,
+    "latitude" : 0.0
+  } ]
+}

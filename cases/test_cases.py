@@ -8,7 +8,8 @@ import common.global_var as gl
 from configs.config_reader import ReadConfig
 from common.http_client import Client
 from util.case_filter import get_test_cases
-
+from util.logger import MyLogger;
+import logging
 # 筛选有效用例
 test_data = get_test_cases()
 login_data = test_data[0]
@@ -37,6 +38,11 @@ class TestAPI(unittest.TestCase):
         # print(res.json().get("value").get("sysUserId"))
     @ddt.data(*test_data)
     def test_api(self, data):
+        #加日志
+        log_path = ReadConfig().get_log("log_path")
+        mylog = MyLogger(log_path, logging.ERROR, logging.DEBUG)
+        mylog.info("CMS_请求参数如下：")
+        mylog.info(data)
         # print(data)
         #data是字典类型
         data["url"] = f'{ReadConfig().get_project("host")}{data.get("url")}'
@@ -51,6 +57,8 @@ class TestAPI(unittest.TestCase):
         # print(dic_data)
         c = Client(dic_data)
         res=c.send()
+        mylog.info("CMS_接口响应信息如下：")
+        mylog.info(res.text)
         print(res.text)
         checks = c.checks.split('&')
         for check in checks:

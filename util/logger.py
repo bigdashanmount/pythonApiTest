@@ -4,6 +4,7 @@ import logging
 
 from configs.config_reader import ReadConfig
 
+#服务器日志查看路径/root/.jenkins/workspace/PyApiTest/log
 
 class MyLogger:
     def __init__(self, path, clevel=logging.DEBUG, Flevel=logging.DEBUG):
@@ -40,7 +41,7 @@ class MyLogger:
 if __name__ == '__main__':
     log_path = ReadConfig().get_log("log_path")
     mylog = MyLogger(log_path, logging.ERROR, logging.DEBUG)
-    mylog.debug('debug日志')
+    mylog.debug('debug日志孟祥山')
     mylog.info('info日志')
     mylog.warn('warning日志')
     mylog.error('error日志')

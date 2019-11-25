@@ -4,7 +4,6 @@ import os
 import sys
 current_working_directory = os.path.abspath(os.path.dirname(os.getcwd()))
 sys.path.append(current_working_directory)
-
 from util.html_reporter import add_py_case, custom_report
 from util.email_sender import Email
 from configs.config_reader import ReadConfig
@@ -24,7 +23,7 @@ def run_all_case():
     cases = add_py_case(py_file_path, rule)
     custom_report(cases)
     # 注意：建议调试代码时，屏蔽发邮件功能
-    # Email().send_attach(receive_users, title, html_report_path, html_report_name)
+    #Email().send_attach(receive_users, title, html_report_path, html_report_name)
 
 
 if __name__ == "__main__":

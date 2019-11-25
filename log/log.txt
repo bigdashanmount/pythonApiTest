@@ -505,3 +505,46 @@
     "latitude" : 0.0
   } ]
 }
+[2019-11-25 17:39:15] [INFO] CMS_请求参数如下：
+[2019-11-25 17:39:15] [INFO] {'row_id': 3, 'case_id': '2', 'case_version': '2', 'module': 'wd', 'case_name': 'listCampusRegion', 'method': 'GET', 'url': '/basic/campusRegion/listCampusRegion', 'params': 'id=0&selectId=0', 'headers': '{"appKey":"201820011141153","isAdmin":"2","signature":"signature_value","token":"token_value","userId":"userId_value"}', 'body': '', 'type': '', 'depend': '', 'active': '1', 'exp_res': "c.assert_status_code(200)&c.assert_equal('$..code', 0)"}
+[2019-11-25 17:39:15] [INFO] CMS_接口响应信息如下：
+[2019-11-25 17:39:15] [INFO] {
+  "code" : 0,
+  "message" : "SUCCESS",
+  "value" : [ {
+    "bigAreaId" : 101,
+    "bigAreaName" : "华东",
+    "longitude" : 0.0,
+    "latitude" : 0.0
+  }, {
+    "bigAreaId" : 102,
+    "bigAreaName" : "西南",
+    "longitude" : 0.0,
+    "latitude" : 0.0
+  }, {
+    "bigAreaId" : 103,
+    "bigAreaName" : "东北",
+    "longitude" : 0.0,
+    "latitude" : 0.0
+  }, {
+    "bigAreaId" : 104,
+    "bigAreaName" : "华北",
+    "longitude" : 0.0,
+    "latitude" : 0.0
+  }, {
+    "bigAreaId" : 105,
+    "bigAreaName" : "华中",
+    "longitude" : 0.0,
+    "latitude" : 0.0
+  }, {
+    "bigAreaId" : 106,
+    "bigAreaName" : "华南",
+    "longitude" : 0.0,
+    "latitude" : 0.0
+  }, {
+    "bigAreaId" : 107,
+    "bigAreaName" : "西北",
+    "longitude" : 0.0,
+    "latitude" : 0.0
+  } ]
+}

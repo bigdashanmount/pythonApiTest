@@ -23,7 +23,7 @@ def run_all_case():
     cases = add_py_case(py_file_path, rule)
     custom_report(cases)
     # 注意：建议调试代码时，屏蔽发邮件功能
-    #Email().send_attach(receive_users, title, html_report_path, html_report_name)
+    Email().send_attach(receive_users, title, html_report_path, html_report_name)
 
 
 if __name__ == "__main__":

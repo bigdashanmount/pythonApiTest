@@ -1,13 +1,11 @@
 # coding:utf-8
-
 import configparser
-
-
+#读取配置文件
 class ReadConfig:
     def __init__(self):
         self.cf = configparser.ConfigParser()
+        #读取路径、编码格式
         self.cf.read("../configs/config.ini", encoding='utf-8')
-
     def get_project(self, name):
         value = self.cf.get("PROJECT", name)
         return value
@@ -61,7 +59,13 @@ class ReadConfig:
 
 
 if __name__ == "__main__":
-    ReadConfig().write_config("gkapisdev", "3.2.0", "0", "0")
+    # 测试Service_url
+    #test_url = http: // pycmstest.lexue.com
+    # 灰度Service_url
+    #tsl_url = http: // pycmstsl.lexue.com
+    # 线上Service_url
+    #dev_url = https: // pycms.lexue.com
+    ReadConfig().write_config("pycmstest", "3.2.0", "0", "0")
     host = ReadConfig().get_project("host")
     app_version = ReadConfig().get_project("app_version")
     case_version = ReadConfig().get_project("case_version")

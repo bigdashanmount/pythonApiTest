@@ -3,7 +3,7 @@
 import xlrd
 from configs.config_reader import ReadConfig
 
-
+#读取Excel
 class Excel:
     def __init__(self, excel_path, sheet):
         self.excel_path = excel_path

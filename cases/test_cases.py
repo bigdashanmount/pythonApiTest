@@ -23,25 +23,36 @@ class TestAPI(unittest.TestCase):
     def setUpClass(cls):
         print("开始执行测试用例......\n")
         url = f'{ReadConfig().get_project("host")}{login_data.get("url")}'
-        str_headers = login_data.get("headers").replace("app_version", ReadConfig().get_project("app_version"))
+        str_headers = login_data.get("headers")
         dic_headers = json.loads(str_headers)
         dic_data = json.loads(login_data.get("body"))
         s = requests.session()
-        res = s.post(url=url, json=dic_data, headers=dic_headers)
+        res = s.post(url, data=dic_data, headers=dic_headers)
         if res is not None:
             gl.init()
-            gl.set_value("token", res.json().get("lgtk"))
+            gl.set_value("token", res.json().get("value").get("token"))
+            gl.set_value("userId", res.json().get("value").get("sysUserId"))
         else:
             print("登录失败")
-
+        # print(res.json().get("value").get("token"))
+        # print(res.json().get("value").get("sysUserId"))
     @ddt.data(*test_data)
     def test_api(self, data):
+        # print(data)
+        #data是字典类型
         data["url"] = f'{ReadConfig().get_project("host")}{data.get("url")}'
-        str_data_version = json.dumps(data).replace("app_version", ReadConfig().get_project("app_version"))
-        str_data_token = str_data_version.replace("token", gl.get_value("token"))
-        dic_data_token = json.loads(str_data_token)
-        c = Client(dic_data_token)
-        c.send()
+        #字典转字符串
+        str_data_version = json.dumps(data)
+        #替换token
+        pr=str_data_version.replace("token_value", gl.get_value("token"))
+        #替换uisrId
+        pr2 = pr.replace("userId_value", str(gl.get_value("userId")))#userId类型int转一下str
+        str_data = pr2.replace("signature_value", "2549059CB2A1A7D855940251D05003960A4EEB7B")
+        dic_data = json.loads(str_data)
+        # print(dic_data)
+        c = Client(dic_data)
+        res=c.send()
+        print(res.text)
         checks = c.checks.split('&')
         for check in checks:
             exec(check)

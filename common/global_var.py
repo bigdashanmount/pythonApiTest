@@ -1,6 +1,6 @@
 # coding:utf-8
 
-
+#全局变脸池的字典
 def init():
     global global_dict
     global_dict = {}

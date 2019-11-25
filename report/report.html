@@ -2,7 +2,7 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-    <title>LeXue API接口自动化测试报告</title>
+    <title>LeXue CMS接口自动化测试报告</title>
     <meta name="generator" content="HTMLTestRunner 0.8.2.1"/>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
     <link href="http://libs.baidu.com/bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet">
@@ -121,22 +121,22 @@ function html_escape(s) {
 }
 </script>
 <div class='heading'>
-<h1 style="font-family: Microsoft YaHei">LeXue API接口自动化测试报告</h1>
+<h1 style="font-family: Microsoft YaHei">LeXue CMS接口自动化测试报告</h1>
 <p class='attribute' style="font-size:16px;"><strong>测试人员 : </strong> QA</p>
-<p class='attribute' style="font-size:16px;"><strong>开始时间 : </strong> 2019-11-19 15:53:49</p>
-<p class='attribute' style="font-size:16px;"><strong>合计耗时 : </strong> 0:00:00.10</p>
-<p class='attribute' style="font-size:16px;"><strong>测试结果 : </strong> 共 6，错误 6</p>
+<p class='attribute' style="font-size:16px;"><strong>开始时间 : </strong> 2019-11-25 09:18:46</p>
+<p class='attribute' style="font-size:16px;"><strong>合计耗时 : </strong> 0:00:00.08</p>
+<p class='attribute' style="font-size:16px;"><strong>测试结果 : </strong> 共 1，通过 1</p>
 
-<p class='description'>Version:3.2.3</p>
+<p class='description'>Version:3.2.0</p>
 </div>
 
 
 
 <p id='show_detail_line'>
-<a class="btn btn-primary" href='javascript:showCase(0)'>通过率 0.00% </a>
+<a class="btn btn-primary" href='javascript:showCase(0)'>通过率 100.00% </a>
 <a class="btn btn-danger" href='javascript:showCase(1)'>失败 0 </a>
-<a class="btn btn-success" href='javascript:showCase(2)'>成功 0 </a>
-<a class="btn btn-info" href='javascript:showCase(3)'>所有 6 </a>
+<a class="btn btn-success" href='javascript:showCase(2)'>成功 1 </a>
+<a class="btn btn-info" href='javascript:showCase(3)'>所有 1 </a>
 </p>
 <table id='result_table' class="table table-condensed table-bordered table-hover" style="font-size:14px;">
 <colgroup>
@@ -156,158 +156,70 @@ function html_escape(s) {
     <td>详细</td>
 </tr>
 
-<tr class='errorClass warning'>
+<tr class='passClass warning'>
     <td>test_cases.TestAPI</td>
-    <td class="text-center">6</td>
+    <td class="text-center">1</td>
+    <td class="text-center">1</td>
     <td class="text-center">0</td>
     <td class="text-center">0</td>
-    <td class="text-center">6</td>
-    <td class="text-center"><a href="javascript:showClassDetail('c1',6)" class="detail" id='c1'>详细</a></td>
+    <td class="text-center"><a href="javascript:showClassDetail('c1',1)" class="detail" id='c1'>详细</a></td>
 </tr>
 
-<tr id='ft1_1' class='none'>
-    <td class='errorCase'><div class='testcase'>test_api_1: dict() -> new empty dictionary</div></td>
+<tr id='pt1_1' class='hiddenRow'>
+    <td class='passCase'><div class='testcase'>test_api_1: dict() -> new empty dictionary</div></td>
     <td colspan='5' align='center'>
     <!--默认收起错误信息 -Findyou-->
-    <button id='btn_ft1_1' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_ft1_1'>错误</button>
-    <div id='div_ft1_1' class="collapse">
+    <button id='btn_pt1_1' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_pt1_1'>通过</button>
+    <div id='div_pt1_1' class="collapse">
 
     <!-- 默认展开错误信息 -Findyou
-    <button id='btn_ft1_1' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_ft1_1'>错误</button>
-    <div id='div_ft1_1' class="collapse in">-->
+    <button id='btn_pt1_1' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_pt1_1'>通过</button>
+    <div id='div_pt1_1' class="collapse in">-->
     <pre>
     
-Traceback (most recent call last):
-  File "C:\Users\lexue\AppData\Local\Programs\Python\Python37\lib\site-packages\ddt.py", line 145, in wrapper
-    return func(self, *args, **kwargs)
-  File "D:\LXRunner\cases\test_cases.py", line 41, in test_api
-    str_data_token = str_data_version.replace("token", gl.get_value("token"))
-TypeError: replace() argument 2 must be str, not None
-
-
-    </pre>
-    </div>
-    </td>
-</tr>
-
-<tr id='ft1_2' class='none'>
-    <td class='errorCase'><div class='testcase'>test_api_2: dict() -> new empty dictionary</div></td>
-    <td colspan='5' align='center'>
-    <!--默认收起错误信息 -Findyou-->
-    <button id='btn_ft1_2' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_ft1_2'>错误</button>
-    <div id='div_ft1_2' class="collapse">
-
-    <!-- 默认展开错误信息 -Findyou
-    <button id='btn_ft1_2' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_ft1_2'>错误</button>
-    <div id='div_ft1_2' class="collapse in">-->
-    <pre>
-    
-Traceback (most recent call last):
-  File "C:\Users\lexue\AppData\Local\Programs\Python\Python37\lib\site-packages\ddt.py", line 145, in wrapper
-    return func(self, *args, **kwargs)
-  File "D:\LXRunner\cases\test_cases.py", line 41, in test_api
-    str_data_token = str_data_version.replace("token", gl.get_value("token"))
-TypeError: replace() argument 2 must be str, not None
-
-
-    </pre>
-    </div>
-    </td>
-</tr>
-
-<tr id='ft1_3' class='none'>
-    <td class='errorCase'><div class='testcase'>test_api_3: dict() -> new empty dictionary</div></td>
-    <td colspan='5' align='center'>
-    <!--默认收起错误信息 -Findyou-->
-    <button id='btn_ft1_3' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_ft1_3'>错误</button>
-    <div id='div_ft1_3' class="collapse">
-
-    <!-- 默认展开错误信息 -Findyou
-    <button id='btn_ft1_3' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_ft1_3'>错误</button>
-    <div id='div_ft1_3' class="collapse in">-->
-    <pre>
-    
-Traceback (most recent call last):
-  File "C:\Users\lexue\AppData\Local\Programs\Python\Python37\lib\site-packages\ddt.py", line 145, in wrapper
-    return func(self, *args, **kwargs)
-  File "D:\LXRunner\cases\test_cases.py", line 41, in test_api
-    str_data_token = str_data_version.replace("token", gl.get_value("token"))
-TypeError: replace() argument 2 must be str, not None
-
-
-    </pre>
-    </div>
-    </td>
-</tr>
-
-<tr id='ft1_4' class='none'>
-    <td class='errorCase'><div class='testcase'>test_api_4: dict() -> new empty dictionary</div></td>
-    <td colspan='5' align='center'>
-    <!--默认收起错误信息 -Findyou-->
-    <button id='btn_ft1_4' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_ft1_4'>错误</button>
-    <div id='div_ft1_4' class="collapse">
-
-    <!-- 默认展开错误信息 -Findyou
-    <button id='btn_ft1_4' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_ft1_4'>错误</button>
-    <div id='div_ft1_4' class="collapse in">-->
-    <pre>
-    
-Traceback (most recent call last):
-  File "C:\Users\lexue\AppData\Local\Programs\Python\Python37\lib\site-packages\ddt.py", line 145, in wrapper
-    return func(self, *args, **kwargs)
-  File "D:\LXRunner\cases\test_cases.py", line 41, in test_api
-    str_data_token = str_data_version.replace("token", gl.get_value("token"))
-TypeError: replace() argument 2 must be str, not None
-
-
-    </pre>
-    </div>
-    </td>
-</tr>
-
-<tr id='ft1_5' class='none'>
-    <td class='errorCase'><div class='testcase'>test_api_5: dict() -> new empty dictionary</div></td>
-    <td colspan='5' align='center'>
-    <!--默认收起错误信息 -Findyou-->
-    <button id='btn_ft1_5' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_ft1_5'>错误</button>
-    <div id='div_ft1_5' class="collapse">
-
-    <!-- 默认展开错误信息 -Findyou
-    <button id='btn_ft1_5' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_ft1_5'>错误</button>
-    <div id='div_ft1_5' class="collapse in">-->
-    <pre>
-    
-Traceback (most recent call last):
-  File "C:\Users\lexue\AppData\Local\Programs\Python\Python37\lib\site-packages\ddt.py", line 145, in wrapper
-    return func(self, *args, **kwargs)
-  File "D:\LXRunner\cases\test_cases.py", line 41, in test_api
-    str_data_token = str_data_version.replace("token", gl.get_value("token"))
-TypeError: replace() argument 2 must be str, not None
-
-
-    </pre>
-    </div>
-    </td>
-</tr>
-
-<tr id='ft1_6' class='none'>
-    <td class='errorCase'><div class='testcase'>test_api_6: dict() -> new empty dictionary</div></td>
-    <td colspan='5' align='center'>
-    <!--默认收起错误信息 -Findyou-->
-    <button id='btn_ft1_6' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_ft1_6'>错误</button>
-    <div id='div_ft1_6' class="collapse">
-
-    <!-- 默认展开错误信息 -Findyou
-    <button id='btn_ft1_6' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_ft1_6'>错误</button>
-    <div id='div_ft1_6' class="collapse in">-->
-    <pre>
-    
-Traceback (most recent call last):
-  File "C:\Users\lexue\AppData\Local\Programs\Python\Python37\lib\site-packages\ddt.py", line 145, in wrapper
-    return func(self, *args, **kwargs)
-  File "D:\LXRunner\cases\test_cases.py", line 41, in test_api
-    str_data_token = str_data_version.replace("token", gl.get_value("token"))
-TypeError: replace() argument 2 must be str, not None
+http://pycmstsl.lexue.com/basic/campusRegion/listCampusRegion
+{'appKey': '201820011141153', 'isAdmin': '2', 'signature': '2549059CB2A1A7D855940251D05003960A4EEB7B', 'token': 'eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiIyNzAxIiwic3ViIjoi5a2f56Wl5bGxIiwiaWF0IjoxNTc0NjQ0NzIxLCJleHAiOjE1NzQ3MzExMjF9.BbbIlQK51FsdbV4MWv-F0JT5qrqSml3jmV3GMoR5z00', 'userId': '2701'}
+id=0&amp;selectId=0
+{
+  "code" : 0,
+  "message" : "SUCCESS",
+  "value" : [ {
+    "bigAreaId" : 101,
+    "bigAreaName" : "华东",
+    "longitude" : 0.0,
+    "latitude" : 0.0
+  }, {
+    "bigAreaId" : 102,
+    "bigAreaName" : "西南",
+    "longitude" : 0.0,
+    "latitude" : 0.0
+  }, {
+    "bigAreaId" : 103,
+    "bigAreaName" : "东北",
+    "longitude" : 0.0,
+    "latitude" : 0.0
+  }, {
+    "bigAreaId" : 104,
+    "bigAreaName" : "华北",
+    "longitude" : 0.0,
+    "latitude" : 0.0
+  }, {
+    "bigAreaId" : 105,
+    "bigAreaName" : "华中",
+    "longitude" : 0.0,
+    "latitude" : 0.0
+  }, {
+    "bigAreaId" : 106,
+    "bigAreaName" : "华南",
+    "longitude" : 0.0,
+    "latitude" : 0.0
+  }, {
+    "bigAreaId" : 107,
+    "bigAreaName" : "西北",
+    "longitude" : 0.0,
+    "latitude" : 0.0
+  } ]
+}
 
 
     </pre>
@@ -317,11 +229,11 @@ TypeError: replace() argument 2 must be str, not None
 
 <tr id='total_row' class="text-center active">
     <td>总计</td>
-    <td>6</td>
+    <td>1</td>
+    <td>1</td>
     <td>0</td>
     <td>0</td>
-    <td>6</td>
-    <td>通过率：0.00%</td>
+    <td>通过率：100.00%</td>
 </tr>
 </table>
 

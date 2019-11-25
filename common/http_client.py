@@ -25,7 +25,10 @@ class Client:
         self.method = data["method"]
         self.headers = eval(data["headers"])
         self.type = data["type"]
-        self.params = data["params"]
+        if data["params"] != "":
+            self.params = data["params"]
+        else:
+            self.params = ""
         if data["body"] != "":
             self.data = json.loads(data["body"])
         else:
@@ -39,6 +42,9 @@ class Client:
 
     def get(self):
         try:
+            print(self.url)
+            print(self.headers)
+            print(self.params)
             response = requests.get(url=self.url, headers=self.headers, params=self.params, timeout=self.timeout, verify=False)
             return response
         except TimeoutError:

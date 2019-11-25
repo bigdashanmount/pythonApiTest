@@ -34,5 +34,5 @@ if __name__ == "__main__":
     :param param3: module(0:全部,1:首页,2:学习,3:发现,4:我的)
     :param param4: case_version(0:全部,1:旧版本,2:新版本) 
     '''
-    # ReadConfig().write_config(sys.argv[1], sys.argv[2], sys.argv[3], sys.argv[4])
+   # ReadConfig().write_config(sys.argv[1], sys.argv[2], sys.argv[3], sys.argv[4])
     run_all_case()

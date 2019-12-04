@@ -2,6 +2,6 @@
 <project version="4">
   <component name="Encoding" addBOMForNewFiles="with NO BOM">
     <file url="file://$PROJECT_DIR$/log/log.txt" charset="GBK" />
-    <file url="file://$PROJECT_DIR$/log/lxgk_log.txt" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/util/SignatureUtil.py" charset="GBK" />
   </component>
 </project>

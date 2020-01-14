@@ -67,6 +67,9 @@ class TestAPI(unittest.TestCase):
         if data["method"] == "POST":
             print(data["method"])
             dic_data = json.loads(data.get("body"))
+        if data["method"] == "PUT":
+            print(data["method"])
+            dic_data = json.loads(data.get("body"))
         sginature = Signature().get_signature(dic_data)
         str_data = pr2.replace("signature_value", sginature)
         dic_data = json.loads(str_data)

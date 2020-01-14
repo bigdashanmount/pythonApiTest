@@ -78,6 +78,29 @@ class Client:
         except TimeoutError:
             return None
 
+    def put(self):
+        try:
+            if self.type == "URL_ENCODE":
+                response = requests.put(url=self.url, headers=self.headers, data=self.data, timeout=self.timeout,
+                                         verify=False)
+            elif self.type == "JSON":
+                response = requests.put(url=self.url, headers=self.headers, json=self.data, timeout=self.timeout,
+                                         verify=False)
+            elif self.type == "multipart/form-data":
+                response = requests.put(url=self.url, headers=self.headers, data=self.data, timeout=self.timeout,
+                                         verify=False)
+            elif self.type == "XML":
+                xml_str = self.data.get('xml')
+                if xml_str and isinstance(xml_str, str):
+                    response = requests.put(url=self.url, headers=self.headers, data=xml_str, timeout=self.timeout,
+                                             verify=False)
+                else:
+                    raise Exception('xml格式不正确')
+            else:
+                print("暂不支持Content-Type: ", self.type)
+            return response
+        except TimeoutError:
+            return None
     def execute_pre_case(self):
         excel_cases_path = ReadConfig().get_cases("excel_cases_path")
         sheet_name = ReadConfig().get_cases("sheet_name")
@@ -126,6 +149,11 @@ class Client:
         self.data = self.data.replace(self.depend.get("to_arg"), str(old_arg))
         response = self.post()
         return response
+    def put_depend(self):
+        old_arg = self.execute_pre_case()
+        self.data = self.data.replace(self.depend.put("to_arg"), str(old_arg))
+        response = self.put()
+        return response
     #上传图片
     def upload_photo(self, file_path):
         try:
@@ -153,6 +181,12 @@ class Client:
                 self.res = self.get()
             else:
                 self.res = self.get_depend()
+            return self.res
+        elif self.method == "PUT":
+            if self.depend == "":
+                self.res = self.put()
+            else:
+                self.res = self.put_depend()
             return self.res
         else:
             print("暂不支持method: ", self.method)

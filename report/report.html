@@ -2,7 +2,7 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-    <title>LeXue CMS接口自动化测试报告</title>
+    <title>LeXue APP接口自动化测试报告</title>
     <meta name="generator" content="HTMLTestRunner 0.8.2.1"/>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
     <link href="http://libs.baidu.com/bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet">
@@ -121,13 +121,13 @@ function html_escape(s) {
 }
 </script>
 <div class='heading'>
-<h1 style="font-family: Microsoft YaHei">LeXue CMS接口自动化测试报告</h1>
-<p class='attribute' style="font-size:16px;"><strong>测试人员 : </strong> QA</p>
-<p class='attribute' style="font-size:16px;"><strong>开始时间 : </strong> 2019-11-25 18:31:35</p>
-<p class='attribute' style="font-size:16px;"><strong>合计耗时 : </strong> 0:00:00.11</p>
-<p class='attribute' style="font-size:16px;"><strong>测试结果 : </strong> 共 1，通过 1</p>
+<h1 style="font-family: Microsoft YaHei">LeXue APP接口自动化测试报告</h1>
+<p class='attribute' style="font-size:16px;"><strong>测试人员 : </strong> QA_peiyou</p>
+<p class='attribute' style="font-size:16px;"><strong>开始时间 : </strong> 2020-01-14 09:27:02</p>
+<p class='attribute' style="font-size:16px;"><strong>合计耗时 : </strong> 0:00:00.60</p>
+<p class='attribute' style="font-size:16px;"><strong>测试结果 : </strong> 共 9，通过 9</p>
 
-<p class='description'>Version:3.2.0</p>
+<p class='description'>Version:3.1.0</p>
 </div>
 
 
@@ -135,8 +135,8 @@ function html_escape(s) {
 <p id='show_detail_line'>
 <a class="btn btn-primary" href='javascript:showCase(0)'>通过率 100.00% </a>
 <a class="btn btn-danger" href='javascript:showCase(1)'>失败 0 </a>
-<a class="btn btn-success" href='javascript:showCase(2)'>成功 1 </a>
-<a class="btn btn-info" href='javascript:showCase(3)'>所有 1 </a>
+<a class="btn btn-success" href='javascript:showCase(2)'>成功 9 </a>
+<a class="btn btn-info" href='javascript:showCase(3)'>所有 9 </a>
 </p>
 <table id='result_table' class="table table-condensed table-bordered table-hover" style="font-size:14px;">
 <colgroup>
@@ -157,12 +157,12 @@ function html_escape(s) {
 </tr>
 
 <tr class='passClass warning'>
-    <td>test_cases.TestAPI</td>
-    <td class="text-center">1</td>
-    <td class="text-center">1</td>
+    <td>test_py_app_cases.TestAPI</td>
+    <td class="text-center">9</td>
+    <td class="text-center">9</td>
     <td class="text-center">0</td>
     <td class="text-center">0</td>
-    <td class="text-center"><a href="javascript:showClassDetail('c1',1)" class="detail" id='c1'>详细</a></td>
+    <td class="text-center"><a href="javascript:showClassDetail('c1',9)" class="detail" id='c1'>详细</a></td>
 </tr>
 
 <tr id='pt1_1' class='hiddenRow'>
@@ -177,48 +177,1630 @@ function html_escape(s) {
     <div id='div_pt1_1' class="collapse in">-->
     <pre>
     
-http://pycmstsl.lexue.com/basic/campusRegion/listCampusRegion
-{'appKey': '201820011141153', 'isAdmin': '2', 'signature': '2549059CB2A1A7D855940251D05003960A4EEB7B', 'token': 'eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiIyNzAxIiwic3ViIjoi5a2f56Wl5bGxIiwiaWF0IjoxNTc0Njc3ODk1LCJleHAiOjE1NzQ3NjQyOTV9.stoscutlRFiPrGFiWzbRuM_9ALH7sVojIkhdYOADbvw', 'userId': '2701'}
-id=0&amp;selectId=0
+&lt;class 'dict'&gt;
+GET
+cityId=110100&amp;gradeName=五年级
+http://pyapitest.lexue.com/user/user/listBanner
+{'appKey': '201820011141153', 'os': 'Android', 'version': '3.1.0', 'signature': '6E095987AD3BF14942C2ED50C35ED88CC0B6DEC6', 'did': '869633047841059', 'cityId': '110100'}
+{"cityId":"110100", "gradeName":"五年级"}
+cityId=110100&amp;gradeName=五年级
 {
   "code" : 0,
   "message" : "SUCCESS",
   "value" : [ {
-    "bigAreaId" : 101,
-    "bigAreaName" : "华东",
-    "longitude" : 0.0,
-    "latitude" : 0.0
-  }, {
-    "bigAreaId" : 102,
-    "bigAreaName" : "西南",
-    "longitude" : 0.0,
-    "latitude" : 0.0
-  }, {
-    "bigAreaId" : 103,
-    "bigAreaName" : "东北",
-    "longitude" : 0.0,
-    "latitude" : 0.0
-  }, {
-    "bigAreaId" : 104,
-    "bigAreaName" : "华北",
-    "longitude" : 0.0,
-    "latitude" : 0.0
-  }, {
-    "bigAreaId" : 105,
-    "bigAreaName" : "华中",
-    "longitude" : 0.0,
-    "latitude" : 0.0
-  }, {
-    "bigAreaId" : 106,
-    "bigAreaName" : "华南",
-    "longitude" : 0.0,
-    "latitude" : 0.0
-  }, {
-    "bigAreaId" : 107,
-    "bigAreaName" : "西北",
-    "longitude" : 0.0,
-    "latitude" : 0.0
+    "spaceType" : 1,
+    "cityId" : 0,
+    "showStartTime" : "2020-01-07 00:00:00",
+    "showEndTime" : "2020-02-29 00:00:00",
+    "title" : "免费录播讲座",
+    "pic" : "http://picspy.lexue.com/avatar-employee-1571144266734",
+    "linkMode" : 2,
+    "keywords" : "",
+    "url" : "lexuepeiyou://lectureDetail?classId=101272&amp;schoolId=290",
+    "backcolor" : "#6D2F2F",
+    "adId" : 872
   } ]
+}
+
+
+    </pre>
+    </div>
+    </td>
+</tr>
+
+<tr id='pt1_2' class='hiddenRow'>
+    <td class='passCase'><div class='testcase'>test_api_2: dict() -> new empty dictionary</div></td>
+    <td colspan='5' align='center'>
+    <!--默认收起错误信息 -Findyou-->
+    <button id='btn_pt1_2' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_pt1_2'>通过</button>
+    <div id='div_pt1_2' class="collapse">
+
+    <!-- 默认展开错误信息 -Findyou
+    <button id='btn_pt1_2' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_pt1_2'>通过</button>
+    <div id='div_pt1_2' class="collapse in">-->
+    <pre>
+    
+&lt;class 'dict'&gt;
+GET
+pageNum=1&amp;pageSize=20
+http://pyapitest.lexue.com/foremarketing/messageCenter/getMessagePageList
+{'appKey': '201820011141153', 'os': 'Android', 'version': '3.1.0', 'signature': '1FA5EF6BF3C96508A96FF1FCE1AAC9C21BD1B37F', 'did': '869633047841059', 'cityId': '110100', 'userId': '1410', 'token': 'eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiIxNDEwIiwiaWF0IjoxNTc4OTY1MTk0LCJleHAiOjE1ODY3NDExOTR9.IWNo09ePh5tCCo7kbu66jCQmMEqDMGqDp44lWPtKhZg'}
+{"pageSize":"20", "pageNum":"1"}
+pageSize=20&amp;pageNum=1
+{
+  "code" : 0,
+  "message" : "SUCCESS",
+  "value" : {
+    "pageNum" : 1,
+    "pageSize" : 20,
+    "size" : 20,
+    "orderBy" : null,
+    "startRow" : 1,
+    "endRow" : 20,
+    "total" : 664,
+    "pages" : 34,
+    "list" : [ {
+      "id" : 10025,
+      "userId" : 1410,
+      "messageType" : "开课提醒",
+      "messageInfo" : "大山家长，您好，【2019秋季初一数学长期不限】将于2020/01/14 08:30开始上课，请做好上课准备 &gt;&gt;",
+      "messageLinkUrl" : "lexuepeiyou://classSchedule",
+      "messageIcon" : "http://picspy.lexue.com/course_start.png",
+      "pushAppName" : "乐学培优",
+      "pushLogo" : "http://picspy.lexue.com/course_start.png",
+      "messageModelId" : 3,
+      "isRead" : 0,
+      "createTime" : 1578952800,
+      "updateTime" : 1578952800
+    }, {
+      "id" : 9988,
+      "userId" : 1410,
+      "messageType" : "开课提醒",
+      "messageInfo" : "大山家长，您好，【2020寒假一年级数学常规公开课不限】将于2020/01/14 08:00开始上课，请做好上课准备 &gt;&gt;",
+      "messageLinkUrl" : "lexuepeiyou://classSchedule",
+      "messageIcon" : "http://picspy.lexue.com/course_start.png",
+      "pushAppName" : "乐学培优",
+      "pushLogo" : "http://picspy.lexue.com/course_start.png",
+      "messageModelId" : 3,
+      "isRead" : 0,
+      "createTime" : 1578952800,
+      "updateTime" : 1578952800
+    }, {
+      "id" : 9985,
+      "userId" : 1410,
+      "messageType" : "开课提醒",
+      "messageInfo" : "第一家长，您好，【2020秋季初一数学寒武公开课不限】将于2020/01/14 11:00开始上课，请做好上课准备 &gt;&gt;",
+      "messageLinkUrl" : "lexuepeiyou://classSchedule",
+      "messageIcon" : "http://picspy.lexue.com/course_start.png",
+      "pushAppName" : "乐学培优",
+      "pushLogo" : "http://picspy.lexue.com/course_start.png",
+      "messageModelId" : 3,
+      "isRead" : 0,
+      "createTime" : 1578952800,
+      "updateTime" : 1578952800
+    }, {
+      "id" : 9978,
+      "userId" : 1410,
+      "messageType" : "开课提醒",
+      "messageInfo" : "小山家长，您好，【2019秋季初一生物寒武纪长期班不限】将于2020/01/14 11:00开始上课，请做好上课准备 &gt;&gt;",
+      "messageLinkUrl" : "lexuepeiyou://classSchedule",
+      "messageIcon" : "http://picspy.lexue.com/course_start.png",
+      "pushAppName" : "乐学培优",
+      "pushLogo" : "http://picspy.lexue.com/course_start.png",
+      "messageModelId" : 3,
+      "isRead" : 0,
+      "createTime" : 1578952800,
+      "updateTime" : 1578952800
+    }, {
+      "id" : 9977,
+      "userId" : 1410,
+      "messageType" : "开课提醒",
+      "messageInfo" : "大山家长，您好，【2019秋季初一生物寒武纪长期班不限】将于2020/01/14 11:00开始上课，请做好上课准备 &gt;&gt;",
+      "messageLinkUrl" : "lexuepeiyou://classSchedule",
+      "messageIcon" : "http://picspy.lexue.com/course_start.png",
+      "pushAppName" : "乐学培优",
+      "pushLogo" : "http://picspy.lexue.com/course_start.png",
+      "messageModelId" : 3,
+      "isRead" : 0,
+      "createTime" : 1578952800,
+      "updateTime" : 1578952800
+    }, {
+      "id" : 9976,
+      "userId" : 1410,
+      "messageType" : "开课提醒",
+      "messageInfo" : "310安卓家长，您好，【2019秋季初一生物寒武纪长期班不限】将于2020/01/14 11:00开始上课，请做好上课准备 &gt;&gt;",
+      "messageLinkUrl" : "lexuepeiyou://classSchedule",
+      "messageIcon" : "http://picspy.lexue.com/course_start.png",
+      "pushAppName" : "乐学培优",
+      "pushLogo" : "http://picspy.lexue.com/course_start.png",
+      "messageModelId" : 3,
+      "isRead" : 0,
+      "createTime" : 1578952800,
+      "updateTime" : 1578952800
+    }, {
+      "id" : 9974,
+      "userId" : 1410,
+      "messageType" : "开课提醒",
+      "messageInfo" : "310安家长，您好，【2019秋季初一语文长期班不限44444】将于2020/01/14 11:00开始上课，请做好上课准备 &gt;&gt;",
+      "messageLinkUrl" : "lexuepeiyou://classSchedule",
+      "messageIcon" : "http://picspy.lexue.com/course_start.png",
+      "pushAppName" : "乐学培优",
+      "pushLogo" : "http://picspy.lexue.com/course_start.png",
+      "messageModelId" : 3,
+      "isRead" : 0,
+      "createTime" : 1578952800,
+      "updateTime" : 1578952800
+    }, {
+      "id" : 9969,
+      "userId" : 1410,
+      "messageType" : "开课提醒",
+      "messageInfo" : "大山家长，您好，【2019秋季初一语文长期班不限333】将于2020/01/14 08:00开始上课，请做好上课准备 &gt;&gt;",
+      "messageLinkUrl" : "lexuepeiyou://classSchedule",
+      "messageIcon" : "http://picspy.lexue.com/course_start.png",
+      "pushAppName" : "乐学培优",
+      "pushLogo" : "http://picspy.lexue.com/course_start.png",
+      "messageModelId" : 3,
+      "isRead" : 0,
+      "createTime" : 1578952800,
+      "updateTime" : 1578952800
+    }, {
+      "id" : 9964,
+      "userId" : 1410,
+      "messageType" : "开课提醒",
+      "messageInfo" : "大山家长，您好，【2020寒假一年级物理常规公开课不限】将于2020/01/14 09:00开始上课，请做好上课准备 &gt;&gt;",
+      "messageLinkUrl" : "lexuepeiyou://classSchedule",
+      "messageIcon" : "http://picspy.lexue.com/course_start.png",
+      "pushAppName" : "乐学培优",
+      "pushLogo" : "http://picspy.lexue.com/course_start.png",
+      "messageModelId" : 3,
+      "isRead" : 0,
+      "createTime" : 1578952800,
+      "updateTime" : 1578952800
+    }, {
+      "id" : 9959,
+      "userId" : 1410,
+      "messageType" : "开课提醒",
+      "messageInfo" : "大山家长，您好，【长期班班级详情】将于2020/01/14 11:00开始上课，请做好上课准备 &gt;&gt;",
+      "messageLinkUrl" : "lexuepeiyou://classSchedule",
+      "messageIcon" : "http://picspy.lexue.com/course_start.png",
+      "pushAppName" : "乐学培优",
+      "pushLogo" : "http://picspy.lexue.com/course_start.png",
+      "messageModelId" : 3,
+      "isRead" : 0,
+      "createTime" : 1578952800,
+      "updateTime" : 1578952800
+    }, {
+      "id" : 9957,
+      "userId" : 1410,
+      "messageType" : "开课提醒",
+      "messageInfo" : "大山家长，您好，【2020寒假六年级地理常规长期班不限111】将于2020/01/14 11:03开始上课，请做好上课准备 &gt;&gt;",
+      "messageLinkUrl" : "lexuepeiyou://classSchedule",
+      "messageIcon" : "http://picspy.lexue.com/course_start.png",
+      "pushAppName" : "乐学培优",
+      "pushLogo" : "http://picspy.lexue.com/course_start.png",
+      "messageModelId" : 3,
+      "isRead" : 0,
+      "createTime" : 1578952800,
+      "updateTime" : 1578952800
+    }, {
+      "id" : 9937,
+      "userId" : 1410,
+      "messageType" : "开课提醒",
+      "messageInfo" : "310安卓家长，您好，【2019秋季初一语文长期班不限】将于2020/01/14 11:00开始上课，请做好上课准备 &gt;&gt;",
+      "messageLinkUrl" : "lexuepeiyou://classSchedule",
+      "messageIcon" : "http://picspy.lexue.com/course_start.png",
+      "pushAppName" : "乐学培优",
+      "pushLogo" : "http://picspy.lexue.com/course_start.png",
+      "messageModelId" : 3,
+      "isRead" : 0,
+      "createTime" : 1578952800,
+      "updateTime" : 1578952800
+    }, {
+      "id" : 9934,
+      "userId" : 1410,
+      "messageType" : "开课提醒",
+      "messageInfo" : "菜鸡家长，您好，【2019秋季初一语文长期班不限44444】将于2020/01/14 11:00开始上课，请做好上课准备 &gt;&gt;",
+      "messageLinkUrl" : "lexuepeiyou://classSchedule",
+      "messageIcon" : "http://picspy.lexue.com/course_start.png",
+      "pushAppName" : "乐学培优",
+      "pushLogo" : "http://picspy.lexue.com/course_start.png",
+      "messageModelId" : 3,
+      "isRead" : 0,
+      "createTime" : 1578952800,
+      "updateTime" : 1578952800
+    }, {
+      "id" : 9933,
+      "userId" : 1410,
+      "messageType" : "开课提醒",
+      "messageInfo" : "续保安家长，您好，【2019秋季初一语文长期班不限44444】将于2020/01/14 11:00开始上课，请做好上课准备 &gt;&gt;",
+      "messageLinkUrl" : "lexuepeiyou://classSchedule",
+      "messageIcon" : "http://picspy.lexue.com/course_start.png",
+      "pushAppName" : "乐学培优",
+      "pushLogo" : "http://picspy.lexue.com/course_start.png",
+      "messageModelId" : 3,
+      "isRead" : 0,
+      "createTime" : 1578952800,
+      "updateTime" : 1578952800
+    }, {
+      "id" : 9932,
+      "userId" : 1410,
+      "messageType" : "开课提醒",
+      "messageInfo" : "捆绑联保家长，您好，【2019秋季初一语文长期班不限44444】将于2020/01/14 11:00开始上课，请做好上课准备 &gt;&gt;",
+      "messageLinkUrl" : "lexuepeiyou://classSchedule",
+      "messageIcon" : "http://picspy.lexue.com/course_start.png",
+      "pushAppName" : "乐学培优",
+      "pushLogo" : "http://picspy.lexue.com/course_start.png",
+      "messageModelId" : 3,
+      "isRead" : 0,
+      "createTime" : 1578952800,
+      "updateTime" : 1578952800
+    }, {
+      "id" : 9931,
+      "userId" : 1410,
+      "messageType" : "开课提醒",
+      "messageInfo" : "安卓310家长，您好，【2019秋季初一语文长期班不限44444】将于2020/01/14 11:00开始上课，请做好上课准备 &gt;&gt;",
+      "messageLinkUrl" : "lexuepeiyou://classSchedule",
+      "messageIcon" : "http://picspy.lexue.com/course_start.png",
+      "pushAppName" : "乐学培优",
+      "pushLogo" : "http://picspy.lexue.com/course_start.png",
+      "messageModelId" : 3,
+      "isRead" : 0,
+      "createTime" : 1578952800,
+      "updateTime" : 1578952800
+    }, {
+      "id" : 9930,
+      "userId" : 1410,
+      "messageType" : "开课提醒",
+      "messageInfo" : "311100家长，您好，【2019秋季初一语文长期班不限44444】将于2020/01/14 11:00开始上课，请做好上课准备 &gt;&gt;",
+      "messageLinkUrl" : "lexuepeiyou://classSchedule",
+      "messageIcon" : "http://picspy.lexue.com/course_start.png",
+      "pushAppName" : "乐学培优",
+      "pushLogo" : "http://picspy.lexue.com/course_start.png",
+      "messageModelId" : 3,
+      "isRead" : 0,
+      "createTime" : 1578952800,
+      "updateTime" : 1578952800
+    }, {
+      "id" : 9928,
+      "userId" : 1410,
+      "messageType" : "开课提醒",
+      "messageInfo" : "菜鸡家长，您好，【2019秋季初一化学长期不限绑定】将于2020/01/14 08:00开始上课，请做好上课准备 &gt;&gt;",
+      "messageLinkUrl" : "lexuepeiyou://classSchedule",
+      "messageIcon" : "http://picspy.lexue.com/course_start.png",
+      "pushAppName" : "乐学培优",
+      "pushLogo" : "http://picspy.lexue.com/course_start.png",
+      "messageModelId" : 3,
+      "isRead" : 0,
+      "createTime" : 1578952800,
+      "updateTime" : 1578952800
+    }, {
+      "id" : 9927,
+      "userId" : 1410,
+      "messageType" : "开课提醒",
+      "messageInfo" : "续保安家长，您好，【2019秋季初一化学长期不限绑定】将于2020/01/14 08:00开始上课，请做好上课准备 &gt;&gt;",
+      "messageLinkUrl" : "lexuepeiyou://classSchedule",
+      "messageIcon" : "http://picspy.lexue.com/course_start.png",
+      "pushAppName" : "乐学培优",
+      "pushLogo" : "http://picspy.lexue.com/course_start.png",
+      "messageModelId" : 3,
+      "isRead" : 0,
+      "createTime" : 1578952800,
+      "updateTime" : 1578952800
+    }, {
+      "id" : 9926,
+      "userId" : 1410,
+      "messageType" : "开课提醒",
+      "messageInfo" : "第一家长，您好，【2019秋季初一化学长期不限绑定】将于2020/01/14 08:00开始上课，请做好上课准备 &gt;&gt;",
+      "messageLinkUrl" : "lexuepeiyou://classSchedule",
+      "messageIcon" : "http://picspy.lexue.com/course_start.png",
+      "pushAppName" : "乐学培优",
+      "pushLogo" : "http://picspy.lexue.com/course_start.png",
+      "messageModelId" : 3,
+      "isRead" : 0,
+      "createTime" : 1578952800,
+      "updateTime" : 1578952800
+    } ],
+    "firstPage" : 1,
+    "prePage" : 0,
+    "nextPage" : 2,
+    "lastPage" : 8,
+    "isFirstPage" : true,
+    "isLastPage" : false,
+    "hasPreviousPage" : false,
+    "hasNextPage" : true,
+    "navigatePages" : 8,
+    "navigatepageNums" : [ 1, 2, 3, 4, 5, 6, 7, 8 ]
+  }
+}
+
+
+    </pre>
+    </div>
+    </td>
+</tr>
+
+<tr id='pt1_3' class='hiddenRow'>
+    <td class='passCase'><div class='testcase'>test_api_3: dict() -> new empty dictionary</div></td>
+    <td colspan='5' align='center'>
+    <!--默认收起错误信息 -Findyou-->
+    <button id='btn_pt1_3' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_pt1_3'>通过</button>
+    <div id='div_pt1_3' class="collapse">
+
+    <!-- 默认展开错误信息 -Findyou
+    <button id='btn_pt1_3' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_pt1_3'>通过</button>
+    <div id='div_pt1_3' class="collapse in">-->
+    <pre>
+    
+&lt;class 'dict'&gt;
+GET
+cityId=110100
+http://pyapitest.lexue.com/search/SearchResource/searchGradeNameList
+{'appKey': '201820011141153', 'os': 'Android', 'version': '3.1.0', 'signature': '61FCC5ABA5A6FF627FFF897C7208497E4B532863', 'did': '869633047841059', 'cityId': '110100', 'userId': '1410', 'token': 'eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiIxNDEwIiwiaWF0IjoxNTc4OTY1MTk0LCJleHAiOjE1ODY3NDExOTR9.IWNo09ePh5tCCo7kbu66jCQmMEqDMGqDp44lWPtKhZg'}
+{"cityId":"110100" }
+cityId=110100
+{
+  "code" : 0,
+  "message" : "SUCCESS",
+  "value" : [ {
+    "sectionList" : [ {
+      "gradeName" : "小班"
+    }, {
+      "gradeName" : "中班"
+    }, {
+      "gradeName" : "大班"
+    } ],
+    "section" : "学龄前"
+  }, {
+    "sectionList" : [ {
+      "gradeName" : "一年级"
+    }, {
+      "gradeName" : "二年级"
+    }, {
+      "gradeName" : "三年级"
+    }, {
+      "gradeName" : "四年级"
+    }, {
+      "gradeName" : "五年级"
+    }, {
+      "gradeName" : "六年级"
+    } ],
+    "section" : "小学"
+  }, {
+    "sectionList" : [ {
+      "gradeName" : "初一"
+    }, {
+      "gradeName" : "初二"
+    }, {
+      "gradeName" : "初三"
+    }, {
+      "gradeName" : "初四"
+    } ],
+    "section" : "初中"
+  }, {
+    "sectionList" : [ {
+      "gradeName" : "高一"
+    }, {
+      "gradeName" : "高二"
+    }, {
+      "gradeName" : "高三"
+    } ],
+    "section" : "高中"
+  } ]
+}
+
+
+    </pre>
+    </div>
+    </td>
+</tr>
+
+<tr id='pt1_4' class='hiddenRow'>
+    <td class='passCase'><div class='testcase'>test_api_4: dict() -> new empty dictionary</div></td>
+    <td colspan='5' align='center'>
+    <!--默认收起错误信息 -Findyou-->
+    <button id='btn_pt1_4' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_pt1_4'>通过</button>
+    <div id='div_pt1_4' class="collapse">
+
+    <!-- 默认展开错误信息 -Findyou
+    <button id='btn_pt1_4' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_pt1_4'>通过</button>
+    <div id='div_pt1_4' class="collapse in">-->
+    <pre>
+    
+&lt;class 'dict'&gt;
+GET
+cityId=110100
+http://pyapitest.lexue.com/base/nearbyCampus/listSchoolByCity
+{'appKey': '201820011141153', 'os': 'Android', 'version': '3.1.0', 'signature': '61FCC5ABA5A6FF627FFF897C7208497E4B532863', 'did': '869633047841059', 'cityId': '110100', 'userId': '1410', 'token': 'eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiIxNDEwIiwiaWF0IjoxNTc4OTY1MTk0LCJleHAiOjE1ODY3NDExOTR9.IWNo09ePh5tCCo7kbu66jCQmMEqDMGqDp44lWPtKhZg'}
+{"cityId":"110100" }
+cityId=110100
+{
+  "code" : 0,
+  "message" : "SUCCESS",
+  "value" : [ {
+    "schoolName" : "北京王府学校",
+    "cityId" : 110100,
+    "cityName" : "北京市",
+    "schoolId" : 290
+  }, {
+    "schoolName" : "陈经纶教育集团",
+    "cityId" : 110100,
+    "cityName" : "北京市",
+    "schoolId" : 345
+  }, {
+    "schoolName" : "北京总部",
+    "cityId" : 110100,
+    "cityName" : "北京市",
+    "schoolId" : 346
+  }, {
+    "schoolName" : "北京筛选-测试学校",
+    "cityId" : 110100,
+    "cityName" : "北京市",
+    "schoolId" : 364
+  }, {
+    "schoolName" : "北京240测试专用学校",
+    "cityId" : 110100,
+    "cityName" : "北京市",
+    "schoolId" : 369
+  }, {
+    "schoolName" : "张顺地专用北京240学校",
+    "cityId" : 110100,
+    "cityName" : "北京市",
+    "schoolId" : 370
+  }, {
+    "schoolName" : "联报优惠2.4测试学校",
+    "cityId" : 110100,
+    "cityName" : "北京市",
+    "schoolId" : 371
+  }, {
+    "schoolName" : "回归测试学校",
+    "cityId" : 110100,
+    "cityName" : "北京市",
+    "schoolId" : 378
+  }, {
+    "schoolName" : "新测试学校",
+    "cityId" : 110100,
+    "cityName" : "北京市",
+    "schoolId" : 379
+  } ]
+}
+
+
+    </pre>
+    </div>
+    </td>
+</tr>
+
+<tr id='pt1_5' class='hiddenRow'>
+    <td class='passCase'><div class='testcase'>test_api_5: dict() -> new empty dictionary</div></td>
+    <td colspan='5' align='center'>
+    <!--默认收起错误信息 -Findyou-->
+    <button id='btn_pt1_5' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_pt1_5'>通过</button>
+    <div id='div_pt1_5' class="collapse">
+
+    <!-- 默认展开错误信息 -Findyou
+    <button id='btn_pt1_5' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_pt1_5'>通过</button>
+    <div id='div_pt1_5' class="collapse in">-->
+    <pre>
+    
+&lt;class 'dict'&gt;
+GET
+cityId=110100&amp;gradeName=高一
+http://pyapitest.lexue.com/user/user/listFastEntry
+{'appKey': '201820011141153', 'os': 'Android', 'version': '3.1.0', 'signature': '58C9AD94900303600941A3BA2E620CB252C769F5', 'did': '869633047841059', 'cityId': '110100', 'userId': '1410', 'token': 'eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiIxNDEwIiwiaWF0IjoxNTc4OTY1MTk0LCJleHAiOjE1ODY3NDExOTR9.IWNo09ePh5tCCo7kbu66jCQmMEqDMGqDp44lWPtKhZg'}
+{"cityId":"110100", "gradeName":"高一"}
+cityId=110100&amp;gradeName=高一
+{
+  "code" : 0,
+  "message" : "SUCCESS",
+  "value" : [ {
+    "subjectName" : "选课",
+    "orderBy" : 0,
+    "subjectIconUrl" : "http://picspy.lexue.com/avatar-employee-1564563122055",
+    "jumpUrl" : "lexuepeiyou://selectClass"
+  }, {
+    "subjectName" : "在线课",
+    "orderBy" : 1,
+    "subjectIconUrl" : "http://picspy.lexue.com/avatar-employee-1575538004482",
+    "jumpUrl" : "lexuepeiyou://selectClass?subjectName=在线"
+  }, {
+    "subjectName" : "数学",
+    "orderBy" : 10,
+    "subjectIconUrl" : "http://picspy.lexue.com/avatar-employee-1566789256421",
+    "jumpUrl" : "lexuepeiyou://selectClass?subjectName=数学"
+  }, {
+    "subjectName" : "语文",
+    "orderBy" : 20,
+    "subjectIconUrl" : "http://picspy.lexue.com/avatar-employee-1564563152101",
+    "jumpUrl" : "lexuepeiyou://selectClass?subjectName=语文"
+  }, {
+    "subjectName" : "英语",
+    "orderBy" : 30,
+    "subjectIconUrl" : "http://picspy.lexue.com/avatar-employee-1564718890488",
+    "jumpUrl" : "lexuepeiyou://selectClass?subjectName=英语"
+  }, {
+    "subjectName" : "物理",
+    "orderBy" : 40,
+    "subjectIconUrl" : "http://picspy.lexue.com/avatar-employee-1564718933918",
+    "jumpUrl" : "lexuepeiyou://selectClass?subjectName=物理"
+  }, {
+    "subjectName" : "化学",
+    "orderBy" : 50,
+    "subjectIconUrl" : "http://picspy.lexue.com/avatar-employee-1566788665084",
+    "jumpUrl" : "lexuepeiyou://selectClass?subjectName=化学"
+  }, {
+    "subjectName" : "生物",
+    "orderBy" : 60,
+    "subjectIconUrl" : "http://picspy.lexue.com/avatar-employee-1566354842975",
+    "jumpUrl" : "lexuepeiyou://selectClass?subjectName=生物"
+  }, {
+    "subjectName" : "综合",
+    "orderBy" : 70,
+    "subjectIconUrl" : "http://picspy.lexue.com/avatar-employee-1566354927103",
+    "jumpUrl" : "lexuepeiyou://selectClass?subjectName=综合"
+  } ]
+}
+
+
+    </pre>
+    </div>
+    </td>
+</tr>
+
+<tr id='pt1_6' class='hiddenRow'>
+    <td class='passCase'><div class='testcase'>test_api_6: dict() -> new empty dictionary</div></td>
+    <td colspan='5' align='center'>
+    <!--默认收起错误信息 -Findyou-->
+    <button id='btn_pt1_6' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_pt1_6'>通过</button>
+    <div id='div_pt1_6' class="collapse">
+
+    <!-- 默认展开错误信息 -Findyou
+    <button id='btn_pt1_6' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_pt1_6'>通过</button>
+    <div id='div_pt1_6' class="collapse in">-->
+    <pre>
+    
+&lt;class 'dict'&gt;
+GET
+cityId=110100&amp;gradeName=高一
+http://pyapitest.lexue.com/user/advert/getPopup
+{'appKey': '201820011141153', 'os': 'Android', 'version': '3.1.0', 'signature': '58C9AD94900303600941A3BA2E620CB252C769F5', 'did': '869633047841059', 'cityId': '110100', 'userId': '1410', 'token': 'eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiIxNDEwIiwiaWF0IjoxNTc4OTY1MTk0LCJleHAiOjE1ODY3NDExOTR9.IWNo09ePh5tCCo7kbu66jCQmMEqDMGqDp44lWPtKhZg'}
+{"cityId":"110100", "gradeName":"高一"}
+cityId=110100&amp;gradeName=高一
+{
+  "code" : 0,
+  "message" : "SUCCESS",
+  "value" : {
+    "spaceType" : 3,
+    "cityId" : 0,
+    "showStartTime" : "2020-01-13 00:00:00",
+    "showEndTime" : "2020-01-30 00:00:00",
+    "title" : "接口测试",
+    "pic" : "http://picspy.lexue.com/avatar-employee-1578904242598",
+    "linkMode" : 2,
+    "keywords" : "",
+    "url" : "wwww",
+    "state" : 1,
+    "updateBy" : 162,
+    "adId" : 875
+  }
+}
+
+
+    </pre>
+    </div>
+    </td>
+</tr>
+
+<tr id='pt1_7' class='hiddenRow'>
+    <td class='passCase'><div class='testcase'>test_api_7: dict() -> new empty dictionary</div></td>
+    <td colspan='5' align='center'>
+    <!--默认收起错误信息 -Findyou-->
+    <button id='btn_pt1_7' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_pt1_7'>通过</button>
+    <div id='div_pt1_7' class="collapse">
+
+    <!-- 默认展开错误信息 -Findyou
+    <button id='btn_pt1_7' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_pt1_7'>通过</button>
+    <div id='div_pt1_7' class="collapse in">-->
+    <pre>
+    
+&lt;class 'dict'&gt;
+GET
+cityId=110100&amp;gradeName=高一
+http://pyapitest.lexue.com/user/advert/getAdvert
+{'appKey': '201820011141153', 'os': 'Android', 'version': '3.1.0', 'signature': '58C9AD94900303600941A3BA2E620CB252C769F5', 'did': '869633047841059', 'cityId': '110100'}
+{"cityId":"110100", "gradeName":"高一"}
+cityId=110100&amp;gradeName=高一
+{
+  "code" : 0,
+  "message" : "SUCCESS",
+  "value" : {
+    "spaceType" : 4,
+    "cityId" : 0,
+    "showStartTime" : "2020-01-13 16:23:10",
+    "showEndTime" : "2020-01-13 16:23:10",
+    "title" : "测试",
+    "pic" : "http://picspy.lexue.com/avatar-employee-1578903812168",
+    "linkMode" : 2,
+    "keywords" : "",
+    "url" : "www",
+    "state" : 1,
+    "updateBy" : 162,
+    "adId" : 873
+  }
+}
+
+
+    </pre>
+    </div>
+    </td>
+</tr>
+
+<tr id='pt1_8' class='hiddenRow'>
+    <td class='passCase'><div class='testcase'>test_api_8: dict() -> new empty dictionary</div></td>
+    <td colspan='5' align='center'>
+    <!--默认收起错误信息 -Findyou-->
+    <button id='btn_pt1_8' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_pt1_8'>通过</button>
+    <div id='div_pt1_8' class="collapse">
+
+    <!-- 默认展开错误信息 -Findyou
+    <button id='btn_pt1_8' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_pt1_8'>通过</button>
+    <div id='div_pt1_8' class="collapse in">-->
+    <pre>
+    
+&lt;class 'dict'&gt;
+POST
+cityId=110100&amp;gradeName=高三&amp;pageNum=1&amp;pageSize=10&amp;switchOpen=0
+{
+  "code" : 0,
+  "message" : "SUCCESS",
+  "value" : {
+    "pageNum" : 1,
+    "pageSize" : 10,
+    "size" : 10,
+    "orderBy" : null,
+    "startRow" : 0,
+    "endRow" : 0,
+    "total" : 51,
+    "pages" : 6,
+    "list" : [ {
+      "classId" : 100943,
+      "cityId" : null,
+      "className" : "引用长期直播：秋季高三化学111",
+      "gradeName" : null,
+      "subjectName" : "化学",
+      "campusName" : "乐学教育集团",
+      "campusNameContent" : null,
+      "seasonName" : null,
+      "weekName" : "周三",
+      "weekNameContent" : null,
+      "timeName" : "上午",
+      "timeNameContent" : null,
+      "courseTypeName" : "长期班",
+      "teacherName" : "张顺地002号",
+      "teacherNameContent" : null,
+      "switchOpen" : 0,
+      "startTime" : "2019-12-16",
+      "endTime" : "2019-12-31",
+      "startTimeLong" : 20191216000000,
+      "endTimeLong" : 20191231000000,
+      "classTimeName" : "00:00~01:00",
+      "classDateStartTime" : "2019/12/17",
+      "classDateEndTime" : "2020/04/17",
+      "levelName" : "不限",
+      "headPic" : "http://picspy.lexue.com/avatar-employee-1571059433566",
+      "limittimeTuitionFee" : "0.00",
+      "classPrice" : "0",
+      "limitTimeStatus" : 0,
+      "weekNameList" : [ {
+        "weekName" : "周三"
+      }, {
+        "weekName" : "周二"
+      }, {
+        "weekName" : "周五"
+      } ],
+      "teacherList" : [ {
+        "dateStartTime" : 20191217000000,
+        "classDate" : "2019-12-17",
+        "teacherId" : 262,
+        "classEndTime" : "01:00",
+        "teacherName" : "张顺地002号",
+        "dateEndTime" : 20191217010000,
+        "teacherHeadPic" : "http://picspy.lexue.com/avatar-employee-1571059433566",
+        "classStartTime" : "00:00",
+        "weekName" : "周二",
+        "nameInitials" : "3",
+        "sex" : 2,
+        "courseSort" : 1
+      } ],
+      "timeNameList" : [ {
+        "timeName" : "上午"
+      } ],
+      "campusNameList" : [ {
+        "areaId" : 110105,
+        "campusName" : "乐学教育集团",
+        "areaName" : "朝阳区",
+        "campusId" : 466
+      } ],
+      "residueNum" : 1,
+      "numLimit" : 5,
+      "occupation" : 4,
+      "classStatus" : 7,
+      "enterStartTime" : null,
+      "isInsertClass" : null,
+      "classPartPrice" : null,
+      "createTime" : 1576476553,
+      "limitEndTime" : null,
+      "limitStartTime" : null,
+      "classDateStartTimeLong" : 20191217000000,
+      "classDateEndTimeLong" : 20200417080000,
+      "oldStuShiftStartTimeLong" : null,
+      "entryFee" : "0.00",
+      "schoolFee" : "0.00",
+      "oldStuShiftStartTime" : null,
+      "yearName" : "2020",
+      "seasonId" : 481,
+      "courseSeries" : 3,
+      "courseTypeCode" : 1,
+      "tagList" : [ "化学" ],
+      "courseSeriesName" : "在线",
+      "playType" : 1,
+      "supportPubOrder" : 1
+    }, {
+      "classId" : 100832,
+      "cityId" : null,
+      "className" : "长期录播——课程状态测试",
+      "gradeName" : null,
+      "subjectName" : "科学",
+      "campusName" : "2.4测试分校1",
+      "campusNameContent" : null,
+      "seasonName" : null,
+      "weekName" : "",
+      "weekNameContent" : null,
+      "timeName" : null,
+      "timeNameContent" : null,
+      "courseTypeName" : "短期班",
+      "teacherName" : "安金磊",
+      "teacherNameContent" : null,
+      "switchOpen" : 0,
+      "startTime" : "2019-12-10",
+      "endTime" : "2019-12-12",
+      "startTimeLong" : 20191210000000,
+      "endTimeLong" : 20191212000000,
+      "classTimeName" : "00:00~00:00",
+      "classDateStartTime" : "2019/12/10",
+      "classDateEndTime" : "2019/12/10",
+      "levelName" : "不限",
+      "headPic" : "http://picspy.lexue.com/avatar-employee-1575786677379",
+      "limittimeTuitionFee" : "0.00",
+      "classPrice" : "1",
+      "limitTimeStatus" : 0,
+      "weekNameList" : [ {
+        "weekName" : ""
+      } ],
+      "teacherList" : [ {
+        "dateStartTime" : 20191210112447,
+        "classDate" : "2019-12-10",
+        "teacherId" : 1349,
+        "classEndTime" : "00:00",
+        "teacherName" : "安金磊",
+        "dateEndTime" : 20191210112447,
+        "teacherHeadPic" : "http://picspy.lexue.com/avatar-employee-1575786677379",
+        "classStartTime" : "00:00",
+        "weekName" : "",
+        "nameInitials" : "C",
+        "sex" : 1,
+        "courseSort" : 1
+      } ],
+      "timeNameList" : [ {
+        "timeName" : ""
+      } ],
+      "campusNameList" : [ {
+        "areaId" : 0,
+        "campusName" : "2.4测试分校1",
+        "areaName" : "",
+        "campusId" : 475
+      } ],
+      "residueNum" : 1,
+      "numLimit" : 1,
+      "occupation" : 0,
+      "classStatus" : 3,
+      "enterStartTime" : null,
+      "isInsertClass" : null,
+      "classPartPrice" : null,
+      "createTime" : 1575945665,
+      "limitEndTime" : null,
+      "limitStartTime" : null,
+      "classDateStartTimeLong" : 20191210104105,
+      "classDateEndTimeLong" : 20191210112447,
+      "oldStuShiftStartTimeLong" : null,
+      "entryFee" : "0.00",
+      "schoolFee" : "0.00",
+      "oldStuShiftStartTime" : null,
+      "yearName" : "",
+      "seasonId" : null,
+      "courseSeries" : 3,
+      "courseTypeCode" : 2,
+      "tagList" : [ "科学" ],
+      "courseSeriesName" : "在线",
+      "playType" : 3,
+      "supportPubOrder" : 1
+    }, {
+      "classId" : 100791,
+      "cityId" : null,
+      "className" : "2222222222",
+      "gradeName" : null,
+      "subjectName" : "语文",
+      "campusName" : "2.4测试分校2",
+      "campusNameContent" : null,
+      "seasonName" : null,
+      "weekName" : "",
+      "weekNameContent" : null,
+      "timeName" : null,
+      "timeNameContent" : null,
+      "courseTypeName" : "长期班",
+      "teacherName" : "安金磊",
+      "teacherNameContent" : null,
+      "switchOpen" : 0,
+      "startTime" : "2019-12-10",
+      "endTime" : "2019-12-13",
+      "startTimeLong" : 20191210000000,
+      "endTimeLong" : 20191213000000,
+      "classTimeName" : "00:00~00:00",
+      "classDateStartTime" : "2019/12/07",
+      "classDateEndTime" : "2019/12/09",
+      "levelName" : "不限",
+      "headPic" : "http://picspy.lexue.com/avatar-employee-1575786677379",
+      "limittimeTuitionFee" : "0.00",
+      "classPrice" : "0",
+      "limitTimeStatus" : 0,
+      "weekNameList" : [ {
+        "weekName" : ""
+      } ],
+      "teacherList" : [ {
+        "dateStartTime" : 20191209165253,
+        "classDate" : "2019-12-09",
+        "teacherId" : 1349,
+        "classEndTime" : "00:00",
+        "teacherName" : "安金磊",
+        "dateEndTime" : 20191209165253,
+        "teacherHeadPic" : "http://picspy.lexue.com/avatar-employee-1575786677379",
+        "classStartTime" : "00:00",
+        "weekName" : "",
+        "nameInitials" : "C",
+        "sex" : 1,
+        "courseSort" : 1
+      } ],
+      "timeNameList" : [ {
+        "timeName" : ""
+      } ],
+      "campusNameList" : [ {
+        "areaId" : 0,
+        "campusName" : "2.4测试分校2",
+        "areaName" : "",
+        "campusId" : 474
+      } ],
+      "residueNum" : 1,
+      "numLimit" : 1,
+      "occupation" : 0,
+      "classStatus" : 3,
+      "enterStartTime" : null,
+      "isInsertClass" : null,
+      "classPartPrice" : null,
+      "createTime" : 1575707475,
+      "limitEndTime" : null,
+      "limitStartTime" : null,
+      "classDateStartTimeLong" : 20191207163115,
+      "classDateEndTimeLong" : 20191209165253,
+      "oldStuShiftStartTimeLong" : null,
+      "entryFee" : "0.00",
+      "schoolFee" : "0.00",
+      "oldStuShiftStartTime" : null,
+      "yearName" : "2020",
+      "seasonId" : null,
+      "courseSeries" : 3,
+      "courseTypeCode" : 1,
+      "tagList" : [ "语文" ],
+      "courseSeriesName" : "在线",
+      "playType" : 3,
+      "supportPubOrder" : 1
+    }, {
+      "classId" : 101050,
+      "cityId" : null,
+      "className" : "2019春季高三寒武世长期班英语不限",
+      "gradeName" : null,
+      "subjectName" : "英语",
+      "campusName" : "班级捆绑二区",
+      "campusNameContent" : null,
+      "seasonName" : null,
+      "weekName" : "周六",
+      "weekNameContent" : null,
+      "timeName" : "上午",
+      "timeNameContent" : null,
+      "courseTypeName" : "长期班",
+      "teacherName" : "和校长",
+      "teacherNameContent" : null,
+      "switchOpen" : 0,
+      "startTime" : "2019-12-27",
+      "endTime" : "2020-01-10",
+      "startTimeLong" : 20191227000000,
+      "endTimeLong" : 20200110000000,
+      "classTimeName" : "00:00~00:02",
+      "classDateStartTime" : "2020/02/01",
+      "classDateEndTime" : "2020/02/05",
+      "levelName" : "不限",
+      "headPic" : "http://picspy.lexue.com/teacher-female-default-picture-20190730092736.jpg",
+      "limittimeTuitionFee" : "0.00",
+      "classPrice" : "0",
+      "limitTimeStatus" : 0,
+      "weekNameList" : [ {
+        "weekName" : "周一"
+      }, {
+        "weekName" : "周三"
+      }, {
+        "weekName" : "周二"
+      }, {
+        "weekName" : "周六"
+      }, {
+        "weekName" : "周日"
+      } ],
+      "teacherList" : [ {
+        "dateStartTime" : 20200201000000,
+        "classDate" : "2020-02-01",
+        "teacherId" : 1371,
+        "classEndTime" : "00:02",
+        "teacherName" : "和校长",
+        "dateEndTime" : 20200201000200,
+        "teacherHeadPic" : "http://picspy.lexue.com/teacher-female-default-picture-20190730092736.jpg",
+        "classStartTime" : "00:00",
+        "weekName" : "周六",
+        "nameInitials" : "H",
+        "sex" : 2,
+        "courseSort" : 1
+      } ],
+      "timeNameList" : [ {
+        "timeName" : "上午"
+      } ],
+      "campusNameList" : [ {
+        "areaId" : 0,
+        "campusName" : "班级捆绑二区",
+        "areaName" : "",
+        "campusId" : 483
+      } ],
+      "residueNum" : 3,
+      "numLimit" : 5,
+      "occupation" : 2,
+      "classStatus" : 7,
+      "enterStartTime" : null,
+      "isInsertClass" : 0,
+      "classPartPrice" : "0",
+      "createTime" : 1577438083,
+      "limitEndTime" : null,
+      "limitStartTime" : null,
+      "classDateStartTimeLong" : 20200201000000,
+      "classDateEndTimeLong" : 20200205000200,
+      "oldStuShiftStartTimeLong" : null,
+      "entryFee" : "0.00",
+      "schoolFee" : "0.00",
+      "oldStuShiftStartTime" : null,
+      "yearName" : "2019",
+      "seasonId" : 479,
+      "courseSeries" : 2,
+      "courseTypeCode" : 1,
+      "tagList" : [ "英语", "增开" ],
+      "courseSeriesName" : "面授",
+      "playType" : 0,
+      "supportPubOrder" : 1
+    }, {
+      "classId" : 101032,
+      "cityId" : null,
+      "className" : "2019春季高三考试课捆绑生物不限",
+      "gradeName" : null,
+      "subjectName" : "生物",
+      "campusName" : "班级捆绑二区",
+      "campusNameContent" : null,
+      "seasonName" : null,
+      "weekName" : "周六",
+      "weekNameContent" : null,
+      "timeName" : "下午",
+      "timeNameContent" : null,
+      "courseTypeName" : "考试课",
+      "teacherName" : "李校长",
+      "teacherNameContent" : null,
+      "switchOpen" : 0,
+      "startTime" : "2019-12-26",
+      "endTime" : "2020-01-10",
+      "startTimeLong" : 20191226000000,
+      "endTimeLong" : 20200110000000,
+      "classTimeName" : "13:00~14:00",
+      "classDateStartTime" : "2020/02/01",
+      "classDateEndTime" : "2020/02/05",
+      "levelName" : "不限",
+      "headPic" : "http://picspy.lexue.com/teacher-female-default-picture-20190730092736.jpg",
+      "limittimeTuitionFee" : "0.00",
+      "classPrice" : "0",
+      "limitTimeStatus" : 0,
+      "weekNameList" : [ {
+        "weekName" : "周一"
+      }, {
+        "weekName" : "周三"
+      }, {
+        "weekName" : "周二"
+      }, {
+        "weekName" : "周六"
+      }, {
+        "weekName" : "周日"
+      } ],
+      "teacherList" : [ {
+        "dateStartTime" : 20200201130000,
+        "classDate" : "2020-02-01",
+        "teacherId" : 1372,
+        "classEndTime" : "14:00",
+        "teacherName" : "李校长",
+        "dateEndTime" : 20200201140000,
+        "teacherHeadPic" : "http://picspy.lexue.com/teacher-female-default-picture-20190730092736.jpg",
+        "classStartTime" : "13:00",
+        "weekName" : "周六",
+        "nameInitials" : "L",
+        "sex" : 2,
+        "courseSort" : 1
+      } ],
+      "timeNameList" : [ {
+        "timeName" : "下午"
+      } ],
+      "campusNameList" : [ {
+        "areaId" : 0,
+        "campusName" : "班级捆绑二区",
+        "areaName" : "",
+        "campusId" : 483
+      } ],
+      "residueNum" : 3,
+      "numLimit" : 5,
+      "occupation" : 2,
+      "classStatus" : 7,
+      "enterStartTime" : null,
+      "isInsertClass" : 0,
+      "classPartPrice" : "0",
+      "createTime" : 1577349801,
+      "limitEndTime" : null,
+      "limitStartTime" : null,
+      "classDateStartTimeLong" : 20200201130000,
+      "classDateEndTimeLong" : 20200205140000,
+      "oldStuShiftStartTimeLong" : null,
+      "entryFee" : "0.00",
+      "schoolFee" : "0.00",
+      "oldStuShiftStartTime" : null,
+      "yearName" : "2019",
+      "seasonId" : 479,
+      "courseSeries" : 1,
+      "courseTypeCode" : 5,
+      "tagList" : [ "生物", "增开" ],
+      "courseSeriesName" : "面授",
+      "playType" : 0,
+      "supportPubOrder" : 1
+    }, {
+      "classId" : 101031,
+      "cityId" : null,
+      "className" : "2019春季高三考试课捆绑综合不限",
+      "gradeName" : null,
+      "subjectName" : "综合",
+      "campusName" : "班级捆绑一区",
+      "campusNameContent" : null,
+      "seasonName" : null,
+      "weekName" : "周六",
+      "weekNameContent" : null,
+      "timeName" : "上午",
+      "timeNameContent" : null,
+      "courseTypeName" : "考试课",
+      "teacherName" : "测试88",
+      "teacherNameContent" : null,
+      "switchOpen" : 0,
+      "startTime" : "2019-12-26",
+      "endTime" : "2020-01-10",
+      "startTimeLong" : 20191226000000,
+      "endTimeLong" : 20200110000000,
+      "classTimeName" : "00:00~00:02",
+      "classDateStartTime" : "2020/02/01",
+      "classDateEndTime" : "2020/02/05",
+      "levelName" : "不限",
+      "headPic" : "http://picspy.lexue.com/teacher-female-default-picture-20190730092736.jpg",
+      "limittimeTuitionFee" : "0.00",
+      "classPrice" : "0",
+      "limitTimeStatus" : 0,
+      "weekNameList" : [ {
+        "weekName" : "周一"
+      }, {
+        "weekName" : "周三"
+      }, {
+        "weekName" : "周二"
+      }, {
+        "weekName" : "周六"
+      }, {
+        "weekName" : "周日"
+      } ],
+      "teacherList" : [ {
+        "dateStartTime" : 20200201000000,
+        "classDate" : "2020-02-01",
+        "teacherId" : 1385,
+        "classEndTime" : "00:02",
+        "teacherName" : "测试88",
+        "dateEndTime" : 20200201000200,
+        "teacherHeadPic" : "http://picspy.lexue.com/teacher-female-default-picture-20190730092736.jpg",
+        "classStartTime" : "00:00",
+        "weekName" : "周六",
+        "nameInitials" : "C",
+        "sex" : 2,
+        "courseSort" : 1
+      } ],
+      "timeNameList" : [ {
+        "timeName" : "上午"
+      } ],
+      "campusNameList" : [ {
+        "areaId" : 0,
+        "campusName" : "班级捆绑一区",
+        "areaName" : "",
+        "campusId" : 482
+      } ],
+      "residueNum" : 3,
+      "numLimit" : 5,
+      "occupation" : 2,
+      "classStatus" : 7,
+      "enterStartTime" : null,
+      "isInsertClass" : 0,
+      "classPartPrice" : "0",
+      "createTime" : 1577349762,
+      "limitEndTime" : null,
+      "limitStartTime" : null,
+      "classDateStartTimeLong" : 20200201000000,
+      "classDateEndTimeLong" : 20200205000200,
+      "oldStuShiftStartTimeLong" : null,
+      "entryFee" : "0.00",
+      "schoolFee" : "0.00",
+      "oldStuShiftStartTime" : null,
+      "yearName" : "2019",
+      "seasonId" : 479,
+      "courseSeries" : 1,
+      "courseTypeCode" : 5,
+      "tagList" : [ "综合", "增开" ],
+      "courseSeriesName" : "面授",
+      "playType" : 0,
+      "supportPubOrder" : 1
+    }, {
+      "classId" : 100974,
+      "cityId" : null,
+      "className" : "2019春季高三数学续报",
+      "gradeName" : null,
+      "subjectName" : "数学",
+      "campusName" : "第四校区",
+      "campusNameContent" : null,
+      "seasonName" : null,
+      "weekName" : "周三",
+      "weekNameContent" : null,
+      "timeName" : "上午",
+      "timeNameContent" : null,
+      "courseTypeName" : "长期班",
+      "teacherName" : "二轮啊啊",
+      "teacherNameContent" : null,
+      "switchOpen" : 0,
+      "startTime" : "2019-12-24",
+      "endTime" : "2019-12-28",
+      "startTimeLong" : 20191224000000,
+      "endTimeLong" : 20191228000000,
+      "classTimeName" : "00:00~00:02",
+      "classDateStartTime" : "2020/01/15",
+      "classDateEndTime" : "2020/01/17",
+      "levelName" : "不限",
+      "headPic" : "http://picspy.lexue.com/teacher-female-default-picture-20190730092736.jpg",
+      "limittimeTuitionFee" : "0.00",
+      "classPrice" : "0",
+      "limitTimeStatus" : 0,
+      "weekNameList" : [ {
+        "weekName" : "周三"
+      }, {
+        "weekName" : "周五"
+      }, {
+        "weekName" : "周四"
+      } ],
+      "teacherList" : [ {
+        "dateStartTime" : 20200115000000,
+        "classDate" : "2020-01-15",
+        "teacherId" : 1379,
+        "classEndTime" : "00:02",
+        "teacherName" : "二轮啊啊",
+        "dateEndTime" : 20200115000200,
+        "teacherHeadPic" : "http://picspy.lexue.com/teacher-female-default-picture-20190730092736.jpg",
+        "classStartTime" : "00:00",
+        "weekName" : "周三",
+        "nameInitials" : "E",
+        "sex" : 2,
+        "courseSort" : 1
+      } ],
+      "timeNameList" : [ {
+        "timeName" : "上午"
+      } ],
+      "campusNameList" : [ {
+        "areaId" : 110101,
+        "campusName" : "第四校区",
+        "areaName" : "东城区",
+        "campusId" : 478
+      } ],
+      "residueNum" : 3,
+      "numLimit" : 5,
+      "occupation" : 2,
+      "classStatus" : 7,
+      "enterStartTime" : null,
+      "isInsertClass" : 0,
+      "classPartPrice" : "0",
+      "createTime" : 1576723652,
+      "limitEndTime" : null,
+      "limitStartTime" : null,
+      "classDateStartTimeLong" : 20200115000000,
+      "classDateEndTimeLong" : 20200117000200,
+      "oldStuShiftStartTimeLong" : null,
+      "entryFee" : "0.00",
+      "schoolFee" : "0.00",
+      "oldStuShiftStartTime" : null,
+      "yearName" : "2019",
+      "seasonId" : 479,
+      "courseSeries" : 1,
+      "courseTypeCode" : 1,
+      "tagList" : [ "数学", "增开" ],
+      "courseSeriesName" : "面授",
+      "playType" : 0,
+      "supportPubOrder" : 1
+    }, {
+      "classId" : 100942,
+      "cityId" : null,
+      "className" : "引用长期录播：秋季高三化学",
+      "gradeName" : null,
+      "subjectName" : "化学",
+      "campusName" : "乐学教育集团",
+      "campusNameContent" : null,
+      "seasonName" : null,
+      "weekName" : "",
+      "weekNameContent" : null,
+      "timeName" : "",
+      "timeNameContent" : null,
+      "courseTypeName" : "长期班",
+      "teacherName" : "张顺地001",
+      "teacherNameContent" : null,
+      "switchOpen" : 0,
+      "startTime" : "2019-12-16",
+      "endTime" : "2019-12-21",
+      "startTimeLong" : 20191216000000,
+      "endTimeLong" : 20191221000000,
+      "classTimeName" : "00:00~00:00",
+      "classDateStartTime" : "2019/12/16",
+      "classDateEndTime" : "2019/12/16",
+      "levelName" : "不限",
+      "headPic" : "http://picspy.lexue.com/avatar-employee-1571393239115",
+      "limittimeTuitionFee" : "0.00",
+      "classPrice" : "0",
+      "limitTimeStatus" : 0,
+      "weekNameList" : [ {
+        "weekName" : ""
+      } ],
+      "teacherList" : [ {
+        "dateStartTime" : 20191216180426,
+        "classDate" : "2019-12-16",
+        "teacherId" : 1361,
+        "classEndTime" : "00:00",
+        "teacherName" : "张顺地001",
+        "dateEndTime" : 20191216180426,
+        "teacherHeadPic" : "http://picspy.lexue.com/avatar-employee-1571393239115",
+        "classStartTime" : "00:00",
+        "weekName" : "",
+        "nameInitials" : "3",
+        "sex" : 2,
+        "courseSort" : 1
+      } ],
+      "timeNameList" : [ {
+        "timeName" : ""
+      } ],
+      "campusNameList" : [ {
+        "areaId" : 110105,
+        "campusName" : "乐学教育集团",
+        "areaName" : "朝阳区",
+        "campusId" : 466
+      } ],
+      "residueNum" : 3,
+      "numLimit" : 5,
+      "occupation" : 2,
+      "classStatus" : 3,
+      "enterStartTime" : null,
+      "isInsertClass" : null,
+      "classPartPrice" : null,
+      "createTime" : 1576476443,
+      "limitEndTime" : null,
+      "limitStartTime" : null,
+      "classDateStartTimeLong" : 20191216140723,
+      "classDateEndTimeLong" : 20191216140723,
+      "oldStuShiftStartTimeLong" : null,
+      "entryFee" : "0.00",
+      "schoolFee" : "0.00",
+      "oldStuShiftStartTime" : null,
+      "yearName" : "2020",
+      "seasonId" : 481,
+      "courseSeries" : 3,
+      "courseTypeCode" : 1,
+      "tagList" : [ "化学" ],
+      "courseSeriesName" : "在线",
+      "playType" : 3,
+      "supportPubOrder" : 1
+    }, {
+      "classId" : 101046,
+      "cityId" : null,
+      "className" : "2019春季高三短期班捆绑数学-脑残22222",
+      "gradeName" : null,
+      "subjectName" : "数学",
+      "campusName" : "北京240第一校区",
+      "campusNameContent" : null,
+      "seasonName" : null,
+      "weekName" : "周六",
+      "weekNameContent" : null,
+      "timeName" : "上午",
+      "timeNameContent" : null,
+      "courseTypeName" : "短期班",
+      "teacherName" : "对对对",
+      "teacherNameContent" : null,
+      "switchOpen" : 0,
+      "startTime" : "2019-12-26",
+      "endTime" : "2020-01-10",
+      "startTimeLong" : 20191226000000,
+      "endTimeLong" : 20200110000000,
+      "classTimeName" : "00:00~00:02",
+      "classDateStartTime" : "2020/02/01",
+      "classDateEndTime" : "2020/02/05",
+      "levelName" : "脑残",
+      "headPic" : "http://picspy.lexue.com/avatar-employee-1572854018945",
+      "limittimeTuitionFee" : "0.00",
+      "classPrice" : "0",
+      "limitTimeStatus" : 0,
+      "weekNameList" : [ {
+        "weekName" : "周一"
+      }, {
+        "weekName" : "周三"
+      }, {
+        "weekName" : "周二"
+      }, {
+        "weekName" : "周六"
+      }, {
+        "weekName" : "周日"
+      } ],
+      "teacherList" : [ {
+        "dateStartTime" : 20200201000000,
+        "classDate" : "2020-02-01",
+        "teacherId" : 1374,
+        "classEndTime" : "00:02",
+        "teacherName" : "对对对",
+        "dateEndTime" : 20200201000200,
+        "teacherHeadPic" : "http://picspy.lexue.com/avatar-employee-1572854018945",
+        "classStartTime" : "00:00",
+        "weekName" : "周六",
+        "nameInitials" : "2",
+        "sex" : 2,
+        "courseSort" : 1
+      } ],
+      "timeNameList" : [ {
+        "timeName" : "上午"
+      } ],
+      "campusNameList" : [ {
+        "areaId" : 110105,
+        "campusName" : "北京240第一校区",
+        "areaName" : "朝阳区",
+        "campusId" : 470
+      } ],
+      "residueNum" : 4,
+      "numLimit" : 5,
+      "occupation" : 1,
+      "classStatus" : 7,
+      "enterStartTime" : null,
+      "isInsertClass" : 0,
+      "classPartPrice" : "0",
+      "createTime" : 1577431584,
+      "limitEndTime" : null,
+      "limitStartTime" : null,
+      "classDateStartTimeLong" : 20200201000000,
+      "classDateEndTimeLong" : 20200205000200,
+      "oldStuShiftStartTimeLong" : null,
+      "entryFee" : "0.00",
+      "schoolFee" : "0.00",
+      "oldStuShiftStartTime" : null,
+      "yearName" : "2019",
+      "seasonId" : 479,
+      "courseSeries" : 1,
+      "courseTypeCode" : 2,
+      "tagList" : [ "数学", "脑残", "增开" ],
+      "courseSeriesName" : "面授",
+      "playType" : 0,
+      "supportPubOrder" : 1
+    }, {
+      "classId" : 101044,
+      "cityId" : null,
+      "className" : "2019春季高三语文菜鸡：分层长期班",
+      "gradeName" : null,
+      "subjectName" : "语文",
+      "campusName" : "北京240第二校区",
+      "campusNameContent" : null,
+      "seasonName" : null,
+      "weekName" : "周六",
+      "weekNameContent" : null,
+      "timeName" : "上午",
+      "timeNameContent" : null,
+      "courseTypeName" : "长期班",
+      "teacherName" : "残疾001",
+      "teacherNameContent" : null,
+      "switchOpen" : 0,
+      "startTime" : "2019-12-27",
+      "endTime" : "2020-01-10",
+      "startTimeLong" : 20191227000000,
+      "endTimeLong" : 20200110000000,
+      "classTimeName" : "08:10~10:10",
+      "classDateStartTime" : "2020/02/01",
+      "classDateEndTime" : "2020/02/05",
+      "levelName" : "菜鸡",
+      "headPic" : "http://picspy.lexue.com/teacher-female-default-picture-20190730092736.jpg",
+      "limittimeTuitionFee" : "0.00",
+      "classPrice" : "0",
+      "limitTimeStatus" : 0,
+      "weekNameList" : [ {
+        "weekName" : "周一"
+      }, {
+        "weekName" : "周三"
+      }, {
+        "weekName" : "周二"
+      }, {
+        "weekName" : "周六"
+      }, {
+        "weekName" : "周日"
+      } ],
+      "teacherList" : [ {
+        "dateStartTime" : 20200201081000,
+        "classDate" : "2020-02-01",
+        "teacherId" : 1373,
+        "classEndTime" : "10:10",
+        "teacherName" : "残疾001",
+        "dateEndTime" : 20200201101000,
+        "teacherHeadPic" : "http://picspy.lexue.com/teacher-female-default-picture-20190730092736.jpg",
+        "classStartTime" : "08:10",
+        "weekName" : "周六",
+        "nameInitials" : "C",
+        "sex" : 2,
+        "courseSort" : 1
+      } ],
+      "timeNameList" : [ {
+        "timeName" : "上午"
+      } ],
+      "campusNameList" : [ {
+        "areaId" : 110105,
+        "campusName" : "北京240第二校区",
+        "areaName" : "朝阳区",
+        "campusId" : 471
+      } ],
+      "residueNum" : 4,
+      "numLimit" : 5,
+      "occupation" : 1,
+      "classStatus" : 7,
+      "enterStartTime" : null,
+      "isInsertClass" : 0,
+      "classPartPrice" : "0",
+      "createTime" : 1577431144,
+      "limitEndTime" : null,
+      "limitStartTime" : null,
+      "classDateStartTimeLong" : 20200201081000,
+      "classDateEndTimeLong" : 20200205101000,
+      "oldStuShiftStartTimeLong" : null,
+      "entryFee" : "0.00",
+      "schoolFee" : "0.00",
+      "oldStuShiftStartTime" : null,
+      "yearName" : "2019",
+      "seasonId" : 479,
+      "courseSeries" : 1,
+      "courseTypeCode" : 1,
+      "tagList" : [ "语文", "菜鸡", "增开" ],
+      "courseSeriesName" : "面授",
+      "playType" : 0,
+      "supportPubOrder" : 1
+    } ],
+    "firstPage" : 0,
+    "prePage" : 0,
+    "nextPage" : 0,
+    "lastPage" : 0,
+    "isFirstPage" : true,
+    "isLastPage" : false,
+    "hasPreviousPage" : false,
+    "hasNextPage" : false,
+    "navigatePages" : 0,
+    "navigatepageNums" : null
+  }
+}
+
+
+    </pre>
+    </div>
+    </td>
+</tr>
+
+<tr id='pt1_9' class='hiddenRow'>
+    <td class='passCase'><div class='testcase'>test_api_9: dict() -> new empty dictionary</div></td>
+    <td colspan='5' align='center'>
+    <!--默认收起错误信息 -Findyou-->
+    <button id='btn_pt1_9' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_pt1_9'>通过</button>
+    <div id='div_pt1_9' class="collapse">
+
+    <!-- 默认展开错误信息 -Findyou
+    <button id='btn_pt1_9' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_pt1_9'>通过</button>
+    <div id='div_pt1_9' class="collapse in">-->
+    <pre>
+    
+&lt;class 'dict'&gt;
+POST
+cityId=110100&amp;content=英语&amp;gradeName=高三
+{
+  "code" : 0,
+  "message" : "SUCCESS",
+  "value" : {
+    "seasonNames" : [ {
+      "seasonName" : "不限"
+    }, {
+      "seasonName" : "春季班"
+    } ],
+    "campusNames" : [ {
+      "areaId" : 999999,
+      "areaName" : "不限",
+      "campusName" : [ {
+        "campusName" : "不限"
+      }, {
+        "campusName" : "班级捆绑二区"
+      }, {
+        "campusName" : "班级捆绑一区"
+      } ]
+    } ],
+    "screenMap" : {
+      "courseSeriesNames" : [ {
+        "courseSeriesName" : "不限"
+      }, {
+        "courseSeriesName" : "面授"
+      } ],
+      "teacherNames" : [ {
+        "teacherName" : "不限老师",
+        "nameInitials" : "#"
+      }, {
+        "teacherName" : "和校长",
+        "nameInitials" : "H"
+      }, {
+        "teacherName" : "李校长",
+        "nameInitials" : "L"
+      } ],
+      "levelNames" : [ {
+        "levelName" : "不限"
+      } ],
+      "timeNames" : [ {
+        "timeName" : "上午"
+      } ],
+      "courseTypeNames" : [ {
+        "courseTypeName" : "不限"
+      }, {
+        "courseTypeName" : "长期班"
+      } ],
+      "weekNames" : [ {
+        "weekName" : "不限"
+      }, {
+        "weekName" : "周一"
+      }, {
+        "weekName" : "周二"
+      }, {
+        "weekName" : "周三"
+      }, {
+        "weekName" : "周六"
+      }, {
+        "weekName" : "周日"
+      } ]
+    },
+    "subjectNames" : [ {
+      "subjectName" : "不限"
+    }, {
+      "subjectName" : "英语"
+    } ]
+  }
 }
 
 
@@ -229,8 +1811,8 @@ id=0&amp;selectId=0
 
 <tr id='total_row' class="text-center active">
     <td>总计</td>
-    <td>1</td>
-    <td>1</td>
+    <td>9</td>
+    <td>9</td>
     <td>0</td>
     <td>0</td>
     <td>通过率：100.00%</td>

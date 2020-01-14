@@ -40,7 +40,7 @@ class ReadConfig:
 
     # 写入配置文件
     def write_config(self, host, app_version, case_module, version):
-        pre = "https://"
+        pre = "http://"
         ending = ".lexue.com"
         host = pre + host + ending
         self.cf.set('PROJECT', 'host', host)
@@ -65,7 +65,7 @@ if __name__ == "__main__":
     #tsl_url = http: // pycmstsl.lexue.com
     # 线上Service_url
     #dev_url = https: // pycms.lexue.com
-    ReadConfig().write_config("pycmstest", "3.2.0", "0", "0")
+    ReadConfig().write_config("pycmstest", "3.1.0", "0", "0")
     host = ReadConfig().get_project("host")
     app_version = ReadConfig().get_project("app_version")
     case_version = ReadConfig().get_project("case_version")

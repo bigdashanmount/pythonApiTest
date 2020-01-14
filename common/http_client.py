@@ -11,6 +11,7 @@ from configs.config_reader import ReadConfig
 from requests_toolbelt.multipart.encoder import MultipartEncoder
 from util.res_parser import find_one, find_all
 from util.db_operator import db_values
+from util.dict_to_str_params import dict_to_str_params
 
 urllib3.disable_warnings()
 
@@ -45,6 +46,10 @@ class Client:
             print(self.url)
             print(self.headers)
             print(self.params)
+            dict_params=json.loads(self.params)
+            #增加了将get方法的字典转成拼接参数样式
+            self.params=dict_to_str_params().dict_params(dict_params)
+            print(self.params)
             response = requests.get(url=self.url, headers=self.headers, params=self.params, timeout=self.timeout, verify=False)
             return response
         except TimeoutError:
@@ -57,7 +62,10 @@ class Client:
             elif self.type == "JSON":
                 response = requests.post(url=self.url, headers=self.headers, json=self.data, timeout=self.timeout, verify=False)
             elif self.type == "multipart/form-data":
-                response = self.upload_photo(ReadConfig().get_file("picture_path"))
+                response = requests.post(url=self.url, headers=self.headers, data=self.data, timeout=self.timeout,
+                                         verify=False)
+                #上传图片
+                #response = self.upload_photo(ReadConfig().get_file("picture_path"))
             elif self.type == "XML":
                 xml_str = self.data.get('xml')
                 if xml_str and isinstance(xml_str, str):
@@ -118,7 +126,7 @@ class Client:
         self.data = self.data.replace(self.depend.get("to_arg"), str(old_arg))
         response = self.post()
         return response
-
+    #上传图片
     def upload_photo(self, file_path):
         try:
             multipart_encoder = MultipartEncoder(

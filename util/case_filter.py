@@ -31,6 +31,7 @@ def get_test_cases():
 
 if __name__ == '__main__':
     cases = get_test_cases()
+   # print(cases[0])
     for c in cases:
         print(c)
         # print("case_id:", cases["case_id"])

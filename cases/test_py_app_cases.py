@@ -60,19 +60,7 @@ class TestAPI(unittest.TestCase):
         pr1 = pr.replace("cityId_value", str(gl.get_value("cityId")))
         #替换uisrId
         pr2 = pr1.replace("userId_value", str(gl.get_value("userId")))#userId类型int转一下str
-        # 根据参数算sginature
-        if data["method"] == "GET":
-            print(data["method"])
-            dic_data = json.loads(data.get("params"))
-        if data["method"] == "POST":
-            print(data["method"])
-            dic_data = json.loads(data.get("body"))
-        if data["method"] == "PUT":
-            print(data["method"])
-            dic_data = json.loads(data.get("body"))
-        sginature = Signature().get_signature(dic_data)
-        str_data = pr2.replace("signature_value", sginature)
-        dic_data = json.loads(str_data)
+        dic_data = json.loads(pr2)
         #print(dic_data)
         c = Client(dic_data)
         res=c.send()

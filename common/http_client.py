@@ -54,12 +54,9 @@ class Client:
             signature = Signature().get_signature(dict_params)
             print(signature)
             #将header转dic,并更新sginature
-            print(self.headers)
             self.headers['signature']=signature
-            print(self.headers)
             #增加了将get方法的字典转成拼接参数样式
             self.params=dict_to_str_params().dict_params(dict_params)
-            print(self.params)
             response = requests.get(url=self.url, headers=self.headers, params=self.params, timeout=self.timeout, verify=False)
             return response
         except TimeoutError:

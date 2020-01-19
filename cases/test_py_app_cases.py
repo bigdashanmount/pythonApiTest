@@ -11,7 +11,7 @@ from util.signatureUtil import Signature
 from util.logger import MyLogger;
 import logging
 # 筛选有效用例
-test_data = get_test_cases("../cases/lxpy_cases/test_data.xlsx","Sheet1")
+test_data = get_test_cases("../cases/lxpy_cases/test_data.xlsx","All")
 login_data = test_data[0]
 test_data.pop(0)
 @ddt.ddt
@@ -52,7 +52,6 @@ class TestAPI(unittest.TestCase):
         #data是字典类型
         data["url"] = f'{ReadConfig().get_project("host")}{data.get("url")}'
         #获取所以用例并且将字典转字符串
-        print(type(data))
         str_data = json.dumps(data)
         #替换token
         pr=str_data.replace("token_value", gl.get_value("token"))

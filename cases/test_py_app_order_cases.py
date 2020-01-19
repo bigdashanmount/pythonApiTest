@@ -11,7 +11,7 @@ from util.signatureUtil import Signature
 from util.logger import MyLogger;
 import logging
 # 筛选有效用例
-test_data = get_test_cases("../cases/lxpy_cases/test_data.xlsx","Sheet2")
+test_data = get_test_cases("../cases/lxpy_cases/test_data.xlsx","Order")
 login_data = test_data[0]
 test_data.pop(0)
 @ddt.ddt

@@ -42,8 +42,10 @@ class Excel:
 
 
 if __name__ == "__main__":
-    excel_cases_path = ReadConfig().get_cases("excel_cases_path")
-    sheet_name = ReadConfig().get_cases("sheet_name")
+    #excel_cases_path = ReadConfig().get_cases("excel_cases_path")
+    #sheet_name = ReadConfig().get_cases("sheet_name")
+    excel_cases_path= "../cases/lxpy_cases/test_data.xlsx"
+    sheet_name = "Sheet1"
     er = Excel(excel_cases_path, sheet_name)
     test_data = er.read_excel()
     print(test_data)

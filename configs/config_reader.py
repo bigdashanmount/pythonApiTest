@@ -65,7 +65,7 @@ if __name__ == "__main__":
     #tsl_url = http: // pycmstsl.lexue.com
     # 线上Service_url
     #dev_url = https: // pycms.lexue.com
-    ReadConfig().write_config("pycmstest", "3.1.0", "0", "0")
+    ReadConfig().write_config("pyapitest", "3.1.0", "0", "0")
     host = ReadConfig().get_project("host")
     app_version = ReadConfig().get_project("app_version")
     case_version = ReadConfig().get_project("case_version")

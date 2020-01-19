@@ -4,7 +4,7 @@ from configs.config_reader import ReadConfig
 from util.excel_parser import Excel
 
 #读取Excel的数据
-def get_test_cases():
+def get_test_cases(excel_cases_path,sheet_name):
     """
         active: 用例状态(0:全部,1:启用,2:禁用)
         module: 模块(0:全部,1:首页,2:学习,3:发现,4:我的)
@@ -12,8 +12,8 @@ def get_test_cases():
     """
     #调用configs中的config_reader.py的ReadConfig类读取配置信息
     #获取excel_cases_path和sheet_name
-    excel_cases_path = ReadConfig().get_cases("excel_cases_path")
-    sheet_name = ReadConfig().get_cases("sheet_name")
+    #excel_cases_path = ReadConfig().get_cases("excel_cases_path")
+    #sheet_name = ReadConfig().get_cases("sheet_name")
     #调用工具类excel_parese.py中的Excel类
     er = Excel(excel_cases_path, sheet_name)
     #读取全部数据
@@ -30,7 +30,7 @@ def get_test_cases():
 
 
 if __name__ == '__main__':
-    cases = get_test_cases()
+    cases = get_test_cases("../cases/lxpy_cases/test_data.xlsx","Sheet1")
    # print(cases[0])
     for c in cases:
         print(c)

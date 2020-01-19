@@ -11,7 +11,7 @@ from util.signatureUtil import Signature
 from util.logger import MyLogger;
 import logging
 # 筛选有效用例
-test_data = get_test_cases("../cases/lxpy_cases/test_data.xlsx","Sheet1")
+test_data = get_test_cases("../cases/lxpy_cases/test_data.xlsx","Sheet2")
 login_data = test_data[0]
 test_data.pop(0)
 @ddt.ddt
@@ -40,8 +40,6 @@ class TestAPI(unittest.TestCase):
             gl.set_value("cityId", res.json().get("value").get("current").get("cityId"))
         else:
             print("登录失败")
-        # print(res.json().get("value").get("token"))
-        # print(res.json().get("value").get("sysUserId"))
     @ddt.data(*test_data)
     def test_api(self, data):
         #加日志

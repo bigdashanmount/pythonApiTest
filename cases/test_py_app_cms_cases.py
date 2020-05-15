@@ -19,7 +19,7 @@ class TestAPI(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
         print("开始执行测试用例......\n")
-        url = f'{ReadConfig().get_project("host")}{login_data.get("url")}'
+        url = f'{ReadConfig().get_project("CMShost")}{login_data.get("url")}'
         #根据参数算sginature
         dic_data = json.loads(login_data.get("body"))
         login_sginature = Signature().get_signature(dic_data)
@@ -36,8 +36,8 @@ class TestAPI(unittest.TestCase):
             gl.init()
             #将登陆用户的城市ID，用户ID和Token存储到全局变量池
             gl.set_value("token", res.json().get("value").get("token"))
-            gl.set_value("userId", res.json().get("value").get("current").get("userId"))
-            gl.set_value("cityId", res.json().get("value").get("current").get("cityId"))
+            gl.set_value("userId", res.json().get("value").get("sysUserId"))
+            #gl.set_value("cityId", res.json().get("value").get("current").get("cityId"))
         else:
             print("登录失败")
     @ddt.data(*test_data)
@@ -48,17 +48,16 @@ class TestAPI(unittest.TestCase):
         mylog.info("请求参数如下：")
         mylog.info(data)
         #data是字典类型
-        data["url"] = f'{ReadConfig().get_project("host")}{data.get("url")}'
+        data["url"] = f'{ReadConfig().get_project("CMShost")}{data.get("url")}'
+
         #获取所以用例并且将字典转字符串
         print(type(data))
         str_data = json.dumps(data)
         #替换token
         pr=str_data.replace("token_value", gl.get_value("token"))
-        # 替换城市ID
-        pr1 = pr.replace("cityId_value", str(gl.get_value("cityId")))
         #替换uisrId
-        pr2 = pr1.replace("userId_value", str(gl.get_value("userId")))#userId类型int转一下str
-        dic_data = json.loads(pr2)
+        pr1 = pr.replace("userId_value", str(gl.get_value("userId")))#userId类型int转一下str
+        dic_data = json.loads(pr1)
         #print(dic_data)
         c = Client(dic_data)
         res=c.send()

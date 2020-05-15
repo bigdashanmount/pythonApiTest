@@ -42,6 +42,6 @@ if __name__ =="__main__":
 	#dict={"mobile": "13671388253", "password": "123456","deviceId":"869633047841059"}
 	#print(type(dict))
 	#dict = {"cityId": "110100", "gradeName": "五年级"}
-	dict ={"currentSchoolId":"170","cityName":"北京市", "studentName":"接口新建学生33", "sex":"1", "grade":"36", "mobile":"13671388253", "cityId":"110100", "currentSchool":"啊小学"}
+	dict ={  "loginName":"13671388253", "password":"388253"}
 	Signature=testSignature.get_signature(dict)
 	print(Signature)

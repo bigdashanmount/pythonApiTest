@@ -77,8 +77,6 @@ class TestAPI(unittest.TestCase):
         print("测试用例执行完毕......\n")
 
 
-
-
 if __name__ == "__main__":
     unittest.main()
 
